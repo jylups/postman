@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/document/data/v2/purchase-order/PSAA22100006"
+method: GET
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "page": 0,
+        "size": 25,
+        "direction": "",
+        "orderBy": "",
+        "searchFilter": "",
+        "taskStatusType": "ACTIVE",
+        "tags": [],
+        "claimedStatus": null,
+        "forceCacheRefresh": true
+    }
+settings: {}
+order: 42000

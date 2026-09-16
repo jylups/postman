@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{searchService}}/api/fmis/index/add/documents"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentNumber": "DBOO20200023",
+        "documentType":"Direct Voucher"
+    }
+settings: {}
+order: 7000

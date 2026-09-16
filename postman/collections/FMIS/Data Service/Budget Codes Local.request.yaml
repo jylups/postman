@@ -1,0 +1,36 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/data/v2/doc-advanced-search/agg-filters"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "page": 0,
+        "size": 25,
+        "direction": "DESC",
+        "orderBy": "docnumber",
+        "taskStatusType": null,
+        "searchFilter": null,
+        "officeCd": "DUC",
+        "fundYears": [
+            "172"
+        ],
+        "docTypes": [],
+        "vendorNbrAndSuffixs": [],
+        "expenseCodes": [],
+        "statuses": [],
+        "startDate": null,
+        "endDate": null,
+        "startEndRange": null,
+        "paymentDate": null,
+        "paymentDateRange": null,
+        "docNumber": null,
+        "accountNbr": null,
+        "invoicenbr": null,
+        "transactionDescription": null,
+        "accountingCodes": []
+    }
+settings: {}
+order: 26000

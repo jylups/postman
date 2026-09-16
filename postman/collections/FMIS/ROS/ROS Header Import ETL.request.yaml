@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/etl/data/ros/export-to-mongo/doc-header"
+method: GET
+settings: {}
+order: 6000

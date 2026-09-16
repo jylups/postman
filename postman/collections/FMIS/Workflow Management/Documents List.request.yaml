@@ -1,0 +1,29 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/api/workflow/admin/documents?page=3&size=10&orderBy=taskName&direction=DESC"
+method: POST
+headers:
+  Content-Type: application/json
+queryParams:
+  page: "3"
+  size: "10"
+  orderBy: taskName
+  direction: DESC
+body:
+  type: text
+  content: |-
+    {
+        "documentCreator": null,
+        "documentType": null,
+        "orgCode": null,
+        "fund1": null,
+        "searchFilter": null,
+        "taskName": null,
+        "taskOutcome": null,
+        "workflowStatus": null
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token1}}"
+settings: {}
+order: 8000

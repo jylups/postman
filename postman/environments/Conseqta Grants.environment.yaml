@@ -1,0 +1,42 @@
+name: Conseqta Grants
+color: null
+values:
+  - key: userNmae
+    value: admin
+    enabled: true
+  - key: password
+    value: zaqxsw123!
+    enabled: true
+  - key: access_token
+    value: ""
+    enabled: true
+  - key: refresh_token
+    value: ""
+    enabled: true
+  - key: keycloakServer
+    value: https://sso.conseqta.io
+    enabled: true
+  - key: testUser
+    value: ""
+    enabled: true
+  - key: testUserSubject
+    value: ""
+    enabled: true
+  - key: teamId
+    value: ""
+    enabled: true
+  - key: testTeam
+    value: ""
+    enabled: true
+  - key: testUserEmail
+    value: ""
+    enabled: true
+  - key: testUserfamilyName
+    value: ""
+    enabled: true
+  - key: testUsergivenName
+    value: ""
+    enabled: true
+  - key: grants-rest-server
+    value: https://conseqta-grant-management-rest.conseqta.io/grants-rest
+    enabled: true

@@ -1,0 +1,12 @@
+$kind: http-request
+url: https://fmis-web-fmis-demo.apps.vcs1.senate.gov/modern/api/fmis/etl/data/reindex-alldocument
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "startDate": "07/21/2022",
+        "endDate": "07/28/2022"
+    }
+settings: {}
+order: 1000

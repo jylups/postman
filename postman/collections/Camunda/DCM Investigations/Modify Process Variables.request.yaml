@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://{{CaseDevServerURL}}/rest/case-instance/{{caseId}}/variables
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {"modifications":
+        {
+        	"firstName": 
+        		{"value": "Camunda"}
+         },
+    "deletions": [
+        "ss1", "lastName"
+    ]}
+order: 5000

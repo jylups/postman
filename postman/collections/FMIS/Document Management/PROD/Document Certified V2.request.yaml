@@ -1,0 +1,11 @@
+$kind: http-request
+url: https://fmis.senate.gov/document/api/document/audit/certified-v2
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "docNo": "DMOR20200814"
+    }
+settings: {}
+order: 13000

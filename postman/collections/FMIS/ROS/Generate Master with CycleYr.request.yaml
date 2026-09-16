@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{documentServiceURL}}/api/document/ros/generate/reports"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "reportStyle": "full",
+        "requestedReportTypes": [
+            "COMMITTEE"
+        ],
+        "departments": [],
+        "appropriations": [],
+        "fundYears": []
+    }
+settings: {}
+order: 16000

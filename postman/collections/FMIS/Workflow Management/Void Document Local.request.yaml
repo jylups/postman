@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/api/workflow/void"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "processInstanceId": "cf8ed6b1-3cb3-11ec-b8b0-0a580a830b01",
+        "taskId": "cf8ed6b1-3cb3-11ec-b8b0-0a580a830b01"
+    }
+settings: {}
+order: 20000

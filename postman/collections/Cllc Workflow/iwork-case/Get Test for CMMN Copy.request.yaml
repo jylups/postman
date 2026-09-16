@@ -1,0 +1,6 @@
+$kind: http-request
+url: https://iworks-case.jylups.com/workflow-service/cmmn-api/cmmn-repository/deployments/681eb4a9-7f96-11f0-aa7e-72e539413e57/resourcedata/InvestigationCaseManagement.cmmn
+method: GET
+settings: {}
+examples: ./.resources/Get Test for CMMN Copy.resources/examples
+order: 3000

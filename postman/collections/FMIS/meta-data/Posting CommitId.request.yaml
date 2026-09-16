@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://localhost:9088/api/fmis/gl/commitId
+method: GET
+settings: {}
+order: 9000

@@ -1,0 +1,27 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/api/workflow/doc/documentsbyorgcode?page=0&size=10&orderBy=&direction=ASC&cacheBuster=1564760489988"
+method: POST
+headers:
+  Content-Type: application/json
+queryParams:
+  page: "0"
+  size: "10"
+  orderBy: ""
+  direction: ASC
+  cacheBuster: "1564760489988"
+body:
+  type: text
+  content: |-
+    {
+       "orgCode":"{{orgCode}}",
+       "taskName":null,
+       "documentType":null,
+       "fund1":null,
+       "documentCreator":null
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token1}}"
+settings: {}
+order: 3000

@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://{{CaseDevServerURL}}/rest/history/task?caseInstanceId={{caseId}}
+method: GET
+queryParams:
+  caseInstanceId: "{{caseId}}"
+settings: {}
+order: 6000

@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/etl/data/traveltext/update-fmis-document-text"
+method: POST
+body:
+  type: json
+  content: '["DKAI20220136"]'
+settings: {}
+order: 14000

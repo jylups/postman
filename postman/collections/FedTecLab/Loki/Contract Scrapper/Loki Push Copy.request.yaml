@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:3100/loki/api/v1/index/volume
+method: GET
+headers:
+  - key: ""
+    value: ""
+    disabled: true
+auth:
+  type: basic
+  credentials:
+    username: root-user
+    password: supersecretpassword
+settings: {}
+order: 3000

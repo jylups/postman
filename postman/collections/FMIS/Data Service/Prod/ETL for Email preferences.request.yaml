@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://fmis.senate.gov/modern/api/fmis/etl/data/user-pref/default-email-pref
+method: GET
+settings: {}
+order: 18000

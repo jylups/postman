@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://uat.fmis.senate.gov/modern/api/fmis/etl/data/ros/export-to-mongo/budget-edits
+method: GET
+settings: {}
+order: 6000

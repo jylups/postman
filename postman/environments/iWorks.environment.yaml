@@ -1,0 +1,60 @@
+name: iWorks
+color: null
+values:
+  - key: candidate_process_id
+    value: ""
+    enabled: true
+  - key: processDefinitionId
+    value: ""
+    enabled: true
+  - key: user_task_id
+    value: ""
+    enabled: true
+  - key: task_id
+    value: ""
+    enabled: true
+  - key: access_token
+    value: ""
+    enabled: true
+  - key: refresh_token
+    value: ""
+    enabled: true
+  - key: inbox-service
+    value: ""
+    enabled: true
+  - key: case_definition_key
+    value: ""
+    enabled: true
+  - key: case_diagram_location
+    value: ""
+    enabled: true
+  - key: case_instance)_id
+    value: fb5ae00f-55df-11f0-85d9-d28a7214cb48
+    enabled: true
+  - key: case_instance_id
+    value: ""
+    enabled: true
+  - key: case_definition_id
+    value: ""
+    enabled: true
+  - key: process_plan_item_id
+    value: ""
+    enabled: true
+  - key: active_plan_createTime
+    value: ""
+    enabled: true
+  - key: OATH-client-id
+    value: ""
+    enabled: true
+  - key: oauth-client-secret
+    value: ""
+    enabled: true
+  - key: oath-client-id
+    value: ""
+    enabled: true
+  - key: case-user-management-server
+    value: ""
+    enabled: true
+  - key: user_management_service
+    value: ""
+    enabled: true

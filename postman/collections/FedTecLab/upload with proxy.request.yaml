@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://iocr.fedteclab.com/api/aws-ocr-extract/file/comprehend
+method: POST
+settings: {}
+order: 8000

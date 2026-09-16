@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://localhost:4000/api/csv/import/committee-authorization
+method: GET
+settings: {}
+order: 9000

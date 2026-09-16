@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:8083/workflow-service/process-api/runtime/tasks?assignee=cd11eb3d-79f3-421d-9b2d-fc90b51b255d
+method: GET
+queryParams:
+  assignee: cd11eb3d-79f3-421d-9b2d-fc90b51b255d
+settings: {}
+order: 5000

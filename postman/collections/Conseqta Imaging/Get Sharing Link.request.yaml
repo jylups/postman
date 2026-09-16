@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{ImagingService}}/imaging/api/sharing/new/{{fileId}}"
+method: GET
+settings: {}
+order: 7000

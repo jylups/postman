@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/api/workflow/posting/search"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "interfaceType": "ALL",
+        "page": 0,
+        "size": 8,
+        "fromDate": "03/30/2021"
+    }
+settings: {}
+order: 1000

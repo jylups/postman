@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://localhost:8081/case-inbox-rest/case-inbox-rest/task/get-owned-tasks
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "start": 0,
+      "size": 10
+    }
+settings: {}
+order: 1000

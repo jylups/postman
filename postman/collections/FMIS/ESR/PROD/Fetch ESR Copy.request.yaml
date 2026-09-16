@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{esrServiceProd}}/api/esr/fetch/{{esrNbr}}"
+method: GET
+settings: {}
+order: 1000

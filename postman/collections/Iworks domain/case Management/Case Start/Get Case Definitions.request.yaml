@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-repository/case-definitions?latest=true&start=0&size=20&sort=name&order=asc"
+method: GET
+queryParams:
+  latest: "true"
+  start: "0"
+  size: "20"
+  sort: name
+  order: asc
+settings: {}
+order: 1000

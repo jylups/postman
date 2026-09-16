@@ -1,0 +1,132 @@
+$kind: http-request
+url: http://{{DevServerURL}}/claim
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "additionalInfo" : "Test for live sample 343232323",
+      "address1" : "146 13th st NE",
+      "address2" : "",
+      "city" : "Washington",
+      "date" : null,
+      "injured" : null,
+      "state" : "DC",
+      "zipcode" : null,
+      "anythingElseComment" : null,
+      "damages" : [ {
+        "age" : null,
+        "animalType" : null,
+        "brandName" : null,
+        "buildingDamage" : null,
+        "companyName" : null,
+        "costOfLoss" : null,
+        "damageDesc" : "My power was out",
+        "damagedItem" : "Appliance/Elec/Computers",
+        "estimatedCostDamage" : null,
+        "imageURL" : null,
+        "incomeLost" : null,
+        "injuryIncident" : null,
+        "interruptionDesc" : null,
+        "interruptionLength" : null,
+        "isDrivable" : null,
+        "isInjury" : null,
+        "isOwner" : null,
+        "licenseNumber" : null,
+        "modelNum" : null,
+        "outageDuration" : null,
+        "propertyType" : null,
+        "replacementCost" : null,
+        "repairCost" : null,
+        "vehicleAddress1" : null,
+        "vehicleAddress2" : null,
+        "vehicleCity" : null,
+        "vehicleMake" : null,
+        "vehicleModel" : null,
+        "vehicleState" : null,
+        "vehicleYear" : null,
+        "vehicleZip" : null,
+        "cause" : "Storm",
+        "eventDate" : 1536848415638,
+        "fullAddress" : "146 13th st NE, Washington DC 20003",
+        "city" : null,
+        "address1" : null,
+        "address2" : null,
+        "state" : null,
+        "zipcode" : null,
+        "documents" : [ {
+          "make" : "LG",
+          "model" : null,
+          "yearPurchased" : null,
+          "estimatedValue" : 1.234565645E9,
+          "description" : "My refrigerator",
+          "imageURL" : null,
+          "created" : null,
+          "modified" : null,
+          "damage" : null
+        } ],
+        "foodItems" : [ 
+        				{
+    				      "amount" : 150,
+    				      "name" : "steak (fillets)",
+    				      "quantity" : 6
+    				    },
+    				    {
+    				      "amount" : 25,
+    				      "name" : "Chicken breast ",
+    				      "quantity" : 10
+    				    },
+    				    {
+    				      "amount" : 25,
+    				      "name" : "Fresh turkey (8 lbs.)",
+    				      "quantity" : 1
+        				}
+        			]
+      } ],
+      "appUser" : {
+        "firstName" : "Hubert",
+        "lastName" : "Shoemaker",
+        "accountNumber" : "1234-12341234",
+        "address1" : null,
+        "address2" : null,
+        "city" : null,
+        "email" : "jcarvallo@deloitte.com",
+        "guestId" : null,
+        "phoneNumber" : "6102833228",
+        "phoneType" : "mobile",
+        "state" : null,
+        "zipcode" : null,
+        "userName" : "jsmith",
+        "accessToken" : null,
+        "roles" : null
+        }
+    }
+scripts:
+  - type: afterResponse
+    code: |
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+          console.log("status 200 successful");
+      });
+
+      var data = JSON.parse(responseBody);
+      console.log("Number claim ID: " + data.id);
+      console.log(data);
+      //Test for one returned item
+      //tests["There should be 1 item returned"] = data.length === 1;
+      pm.environment.set('claimId',data.id);
+
+      tests["Validate city"] = data.city !== null;
+      tests["Validate cound of damages"] = data.damages.length === 1;
+      tests["Validate documents"] = data.damages[0].documents.length ===1;
+      tests["Validate food Items"] = data.damages[0].foodItems.length ===3;
+      tests["AppUser ID exists"] = data.appUser.userName !== null ;
+
+      pm.environment.set('damageId',data.damages[0].id);
+      pm.environment.set('documentId',data.damages[0].documents[0].id);
+      pm.environment.set('foodItemId',data.damages[0].foodItems[0].id);
+      pm.environment.set('userId',data.appUser.userName);
+    language: text/javascript
+order: 1000

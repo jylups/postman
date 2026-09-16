@@ -1,0 +1,10 @@
+$kind: http-request
+url: https://rabbitmq-fmis-dev.apps.vcs1.senate.gov/api/vhosts
+method: GET
+auth:
+  type: basic
+  credentials:
+    username: guest
+    password: guest
+settings: {}
+order: 1000

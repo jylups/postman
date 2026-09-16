@@ -1,0 +1,32 @@
+$kind: http-request
+url: "{{keycloakServer}}/auth/realms/ConseqtaInternal/protocol/openid-connect/token"
+method: POST
+headers:
+  Content-Type: application/x-www-form-urlencoded
+body:
+  type: urlencoded
+  content:
+    client_id: development-client
+    username: grantcreate
+    password: rosslyn95
+    grant_type: password
+    client_secret: b901099f-131f-43c2-9322-843482efb91f
+    scope: openid profile email offline_access
+auth:
+  type: oauth2
+  credentials:
+    tokenType: bearer
+    addTokenTo: header
+    accessToken: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJyZWFJUllLNWRpQ2dpTDFMdlpiLS1lTTE2N255eEFOTEJvNEZ5YUNSUktrIn0.eyJqdGkiOiIyOWNhZDZmOC1jMGM2LTQ5MDYtOWFlOS00NzIwZjc2MmRhZTIiLCJleHAiOjE1NjY5MjI1MDMsIm5iZiI6MCwiaWF0IjoxNTY2OTIyMjAzLCJpc3MiOiJodHRwczovL3Nzby5jb25zZXF0YS5jb20vYXV0aC9yZWFsbXMvQ29uc2VxdGFJbnRlcm5hbCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJjNGVhMGU5NS00ZTU1LTRhYzItYTQ2OS1lNDJmNjk3YzM3MzAiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJjb25zZXF0YS1wb3J0YWwiLCJhdXRoX3RpbWUiOjE1NjY5MjIyMDIsInNlc3Npb25fc3RhdGUiOiJiMmQ0ODdiMC04ZWQyLTRhN2QtOGY3OC02ZjExY2Q4YjFkNmUiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJ1c2VyIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19LCJjb25zZXF0YS1wb3J0YWwiOnsicm9sZXMiOlsiVVNFUiJdfX0sInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsInVzZXJfbmFtZSI6InVzZXIxIiwibmFtZSI6IlRlc3QgVXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InVzZXIxIiwiZ2l2ZW5fbmFtZSI6IlRlc3QiLCJmYW1pbHlfbmFtZSI6IlVzZXIifQ.pAvcayxX0ywkg0O6SuRfPwbIHYWfnxqmgVJUrTvMC-bRUIHR8EssSWqwQwI8fPlcfon6T8WI1BDtLaD4UWk-hsUid_gPAYZPghB5Tj57YRekkrqcL_uivSTZIN0iTWAS0jfXyxbbXKwmgjzv-2uF1h8ptzNnjVIwUlLueA8s3Ggqqp1J44WgfRqE5qPHvIeXZFcMu1lGdTV2dbNd1PSbd-C2f7uwOZKHvm4ftqoXxFG0o-Hn-0i5RsXy40PjVvkdi4TMluSFrLMCRkP_PjZd5eQMG_orOkaaGT8519tOKglj2-yTWfJFzeNS4N1rzHGNJr2J82irDVi6jSZXkPQZ-A
+scripts:
+  - type: afterResponse
+    code: |
+      var data = JSON.parse(responseBody);
+
+      tests["There should be a valid id token after authentication"] = data.access_token;
+
+      pm.environment.set('access_token',data.access_token);
+      pm.environment.set('refresh_token',data.refresh_token);
+    language: text/javascript
+settings: {}
+order: 5000

@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{worklogServiceDev}}/worklog/api/admin/tickets-hours-logged"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+     
+      "startDate": "2020-04-13 00:00",
+      "endDate": "2020-04-19 00:00"
+    }
+settings: {}
+order: 3000

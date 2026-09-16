@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://localhost:9083/api/workflow/restore/{{workflowIdToRestore}}
+method: GET
+settings: {}
+order: 6000

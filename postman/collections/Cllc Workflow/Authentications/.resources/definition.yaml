@@ -1,0 +1,15 @@
+$kind: collection
+auth:
+  - id: 7aed4476-2ee9-4cd1-a38c-a3fa5ff4b76c
+    type: oauth2
+    name: oauth2 auth
+    credentials:
+      clientId: "{{oath-client-id}}"
+      accessTokenUrl: https://sso.aks.iworkscorp.ai/realms/xcelerate-dev/protocol/openid-connect/token
+      authUrl: https://sso.aks.iworkscorp.ai/realms/xcelerate-dev/protocol/openid-connect/auth
+      tokenName: jylupsToken
+      addTokenTo: header
+      clientSecret: "{{oauth-client-secret}}"
+      scope: openid profile email
+      redirect_uri: https://oauth.pstmn.io/v1/callback
+order: 15000

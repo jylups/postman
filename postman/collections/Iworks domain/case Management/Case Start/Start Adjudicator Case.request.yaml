@@ -1,0 +1,56 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-runtime/case-instances"
+method: POST
+body:
+  type: json
+  content: |
+    {
+      "caseDefinitionKey": "{{case_definition_key}}",
+      "businessKey": "EMP-2025-001",
+      "variables": [
+     {
+          "name": "initiator",
+          "value": "{{user_id}}"
+        },
+        {
+            "name": "firstName",
+            "value": "Jorge"
+        },
+        {
+            "name": "lastName",
+            "value": "Carvallo"
+        },
+        {
+            "name": "programCode",
+            "value": "vista"
+        },
+        {
+            "name": "middleInitial",
+            "value": "A"
+        },
+        {
+            "name": "email",
+            "value": "jc@cllc.io"
+        },
+        {
+            "name": "phone",
+            "value": "1234567890"
+        }
+      ]
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(201);
+      }
+      );
+
+       pm.test("Take the last case ID from the list",function(){
+           const responseJson = pm.response.json();
+           pm.expect(responseJson.id).to.be.a('string');
+           pm.environment.set('case_instance_id', responseJson.id);
+       });
+    language: text/javascript
+settings: {}
+order: 2000

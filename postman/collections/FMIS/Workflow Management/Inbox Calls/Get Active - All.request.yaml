@@ -1,0 +1,23 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/api/workflow/dynamic/taskquery/tasks"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "page": 0,
+        "size": 25,
+        "direction": "",
+        "orderBy": "",
+        "searchFilter": "",
+        "taskStatusType": "ACTIVE",
+        "tags": [],
+        "claimedStatus": null,
+        "forceCacheRefresh": true,
+        "canSeeHighPriority": true,
+        "canSeeHoldDocument": true
+    }
+settings: {}
+order: 3000

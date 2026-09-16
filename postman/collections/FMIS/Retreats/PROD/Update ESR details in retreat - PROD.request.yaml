@@ -1,0 +1,15 @@
+$kind: http-request
+url: https://fmis.senate.gov/modern/api/fmis/data/v2/retreats/update-documents-in-retreat
+method: POST
+body:
+  type: json
+  content: |
+    {
+      "retreatNumber": "RTMCN2021001",
+      "documentIds" : ["ESR202122525"],
+      "docTypetoUpdate": "ESR",
+      "memberVendorId": "E000136963",
+      "retreatEventType": "DATA_SERVICE_UPDATE"
+    }
+settings: {}
+order: 1000

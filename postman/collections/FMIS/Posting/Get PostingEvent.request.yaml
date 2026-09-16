@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/api/workflow/posting/status/DKNN20220447"
+method: GET
+settings: {}
+order: 7000

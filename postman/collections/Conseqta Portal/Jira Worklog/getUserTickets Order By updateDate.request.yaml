@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{worklogService}}/worklog/api/user/user-tickets"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+    	"assignee": "jcarvallo",
+    	"sortBy": "updateDate",
+    	"direction":"DESC",
+    	"page" : 0,
+    	"pageSize": 2
+    }
+settings: {}
+order: 16000

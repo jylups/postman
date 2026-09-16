@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/etl/data/traveltext/import-mongo-voucheritnerary/DTIL20210624"
+method: GET
+body:
+  type: json
+  content: '["DTIL20210624"]'
+settings: {}
+order: 13000

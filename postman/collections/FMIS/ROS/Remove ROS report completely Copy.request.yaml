@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{documentServiceURL}}/api/document/ros/report/e9bab1b1-9b12-4930-bc98-f912d9e1d033"
+method: DELETE
+settings: {}
+order: 4000

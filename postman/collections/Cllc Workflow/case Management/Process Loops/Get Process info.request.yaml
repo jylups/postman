@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{server_base}}/process-api/runtime/process-instances/{{candidate_process_id}}"
+method: GET
+settings: {}
+order: 2000

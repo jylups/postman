@@ -1,0 +1,11 @@
+$kind: http-request
+url: https://fmis.senate.gov/search/api/fmis/global/update/document/CV230002831267
+method: GET
+headers:
+  Content-Type: application/json
+auth:
+  type: bearer
+  credentials:
+    token: "{{token1}}"
+settings: {}
+order: 2000

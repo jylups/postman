@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{documentServiceURL}}/api/document/commitId"
+method: GET
+settings: {}
+order: 6000

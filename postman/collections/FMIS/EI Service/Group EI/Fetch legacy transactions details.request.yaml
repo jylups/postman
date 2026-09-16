@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{eiServicesURL}}/api/ei/open/SAACOPSOPSOL/travel"
+method: GET
+settings: {}
+order: 8000

@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://uat.fmis.senate.gov/modern/api/fmis/ros/data/fetch/all-funding-codes
+method: GET
+settings: {}
+order: 12000

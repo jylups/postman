@@ -1,0 +1,17 @@
+$kind: http-request
+url: https://fmis.senate.gov/workflow/api/workflow/initiate-process
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentType": "directVoucher",
+        "initiator": "SA49403",
+        "documentId": "DMRP20210475",
+        "initiatorRootOrg": "MRP",
+        "documentOrgCode": "MRP",
+        "documentSubTypeId": "purchase",
+        "documentSubType": "electronicInvoice"
+    }
+settings: {}
+order: 8000

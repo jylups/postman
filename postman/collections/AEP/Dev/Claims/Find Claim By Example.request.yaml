@@ -1,0 +1,26 @@
+$kind: http-request
+description: Find Claim by Example
+url: http://{{DevServerURL}}/claim/find
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+       "enterprise":{
+          "customerId":"8979942424"
+       },
+       "appUser":{
+          "lastName":"Shoemaker"
+       }
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+          console.log("status 200 successful");
+      });
+    language: text/javascript
+order: 8000

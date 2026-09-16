@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/document/data/v2/retreat/post-event"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "retreatNumber" :"RTROU2021006",
+    	"documentIds":["ESR202118221"],
+    	"docTypetoUpdate": "ESR",
+        "memberVendorId":"E000236984"
+    }
+settings: {}
+order: 3000

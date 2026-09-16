@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://fmis-workflow-engine-service-fmis-prod.os1.senate.gov/api/workflow/dynamic/taskquery/tasks
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "page": 0,
+        "size": 25,
+        "direction": "",
+        "orderBy": "",
+        "searchFilter": "",
+        "taskStatusType": "COMPLETED",
+        "tags": [],
+        "claimedStatus": null,
+        "forceCacheRefresh": true
+    }
+settings: {}
+order: 3000

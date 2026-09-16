@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/posting/data/document/PSAA22100213"
+method: GET
+settings: {}
+order: 1000

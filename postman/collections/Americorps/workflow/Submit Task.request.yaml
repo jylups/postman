@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:8083/workflow-service/process-api/runtime/tasks/:taskId
+method: POST
+pathVariables:
+  taskId: 83086350-664b-11ef-b01f-4ae9f599aa2c
+body:
+  type: json
+  content: |-
+    {
+        "action":"complete",
+        "variables": [
+            {
+                "name": "taskOutcome",
+                "value": "accept"
+        }
+      ]
+    }
+settings: {}
+order: 8000

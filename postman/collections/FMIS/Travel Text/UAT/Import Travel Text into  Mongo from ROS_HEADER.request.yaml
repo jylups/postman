@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://uat.fmis.senate.gov/modern/api/fmis/etl/data/traveltext/export-to-mongo/doc-header
+method: GET
+settings: {}
+order: 9000

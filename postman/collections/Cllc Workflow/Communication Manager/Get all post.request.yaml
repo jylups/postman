@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{comm-manager-server}}/communication/cases/{{case_instance_id}}/forum/posts?page=0&size=10&sort=createdAt,desc"
+method: GET
+queryParams:
+  page: "0"
+  size: "10"
+  sort: createdAt,desc
+scripts:
+  - type: afterResponse
+    code: |
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+      const responseArray = pm.response.json();
+      const firstItem = responseArray[0];
+
+      pm.test("First item exists and is an object", () => {
+              pm.expect(firstItem).to.be.an('object'); // Or whatever type you expect
+              pm.environment.set('post_id',firstItem.id);
+      });
+    language: text/javascript
+settings: {}
+order: 2000

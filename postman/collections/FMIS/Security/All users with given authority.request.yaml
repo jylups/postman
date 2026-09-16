@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{serverURI}}/umanagement/api/public/fmis/um/v2/users/authority/{{authority}}?publicToken=8862d9f0d533e03a3669d0d8533b1a37"
+method: POST
+queryParams:
+  publicToken: 8862d9f0d533e03a3669d0d8533b1a37
+settings: {}
+order: 5000

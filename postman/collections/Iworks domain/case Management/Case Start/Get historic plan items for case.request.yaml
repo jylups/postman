@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-history/historic-planitem-instances?caseInstanceId={{case_instance_id}}"
+method: GET
+queryParams:
+  caseInstanceId: "{{case_instance_id}}"
+settings: {}
+order: 12000

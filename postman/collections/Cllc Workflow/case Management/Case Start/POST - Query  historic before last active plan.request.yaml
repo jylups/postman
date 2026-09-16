@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-query/historic-planitem-instances"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "start": 0,
+      "size": 20,
+      "caseInstanceId": "{{case_instance_id}}",
+        "sort": "createTime",
+        "elementId": "planItemScopingProcess"
+      
+    }
+settings: {}
+order: 23000

@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{forms_server}}/form/user-forms?page=0&size=20&sortBy=lastUpdate&sortDir=desc"
+method: GET
+queryParams:
+  page: "0"
+  size: "20"
+  sortBy: lastUpdate
+  sortDir: desc
+settings: {}
+order: 2000

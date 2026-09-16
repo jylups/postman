@@ -1,0 +1,5 @@
+$kind: http-request
+url: localhost:8086/api/fmis/data/deposit/batch-deposits
+method: GET
+settings: {}
+order: 1000

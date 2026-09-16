@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://localhost:8083/workflow-service/process-api/runtime/process-instances
+method: GET
+settings: {}
+order: 6000

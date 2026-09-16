@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://fmis-etl-jobs-service-fmis-dev.os1.senate.gov/api/etl/jobs/run/dailyIVJob
+method: GET
+settings: {}
+order: 1000

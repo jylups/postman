@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://localhost:8086/api/fmis/data/chatbox-comments/messages/notifications/
+method: POST
+body:
+  type: json
+  content: jcarvallo@conseqta.com
+settings: {}
+order: 3000

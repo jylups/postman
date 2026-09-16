@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{documentServiceURL}}/api/document/payroll/process/files"
+method: GET
+settings: {}
+order: 3000

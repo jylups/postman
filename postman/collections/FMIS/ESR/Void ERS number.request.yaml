@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{esrService}}/api/esr/void/{{esrNbr}}"
+method: POST
+settings: {}
+order: 4000

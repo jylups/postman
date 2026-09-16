@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{server_base}}/dmn-api/dmn-history/historic-decision-executions"
+method: GET
+settings: {}
+order: 5000

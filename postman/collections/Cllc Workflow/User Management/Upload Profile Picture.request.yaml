@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{user_management_service}}/user-management/profile-picture"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: /Users/jylups/Downloads/jcProfilePicture.jpeg
+settings: {}
+order: 2000

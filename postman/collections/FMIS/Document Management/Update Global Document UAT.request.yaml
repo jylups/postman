@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{uatServerURI}}/search/api/fmis/global/update/document/VSAA21900012"
+method: GET
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+       "orgCode":"{{orgCode}}",
+       "taskName":null,
+       "documentType":null,
+       "fund1":null,
+       "documentCreator":null
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token1}}"
+settings: {}
+order: 11000

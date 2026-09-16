@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/data/v2/user/office/SAACOPETRCTR"
+method: GET
+settings: {}
+order: 33000

@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{userManagementService}}/api/fmis/um/v2/queue/vendor-sync/E000229771"
+method: GET
+settings: {}
+order: 5000

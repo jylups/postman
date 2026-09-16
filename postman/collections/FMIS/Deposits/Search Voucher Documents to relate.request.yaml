@@ -1,0 +1,34 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/data/deposit/documentsearch?page=0&size=10&orderBy=docNumber&direction=ASC"
+method: POST
+headers:
+  Content-Type: application/json
+queryParams:
+  page: "0"
+  size: "10"
+  orderBy: docNumber
+  direction: ASC
+body:
+  type: text
+  content: |-
+    {
+      "orgCode": null,
+      "docNumber": null,
+      "vendorNo": null,
+      "invoiceNbr": null,
+      "accountNbr": null,
+      "fundYearKey": null,
+      "searchFilter": null,
+      "startDt": null,
+      "endDt": null,
+      "orderBy": null,
+      "direction": null,
+      "page": null,
+      "size": null
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token1}}"
+settings: {}
+order: 4000

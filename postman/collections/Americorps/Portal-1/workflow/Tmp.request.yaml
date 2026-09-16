@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://localhost:8083/workflow-service/process-api/runtime/tasks?includeProcessVariables=true&active=true&owner=57abeca2-ceb3-4c3b-845e-a6c1f68a26cc
+method: GET
+queryParams:
+  includeProcessVariables: "true"
+  active: "true"
+  owner: 57abeca2-ceb3-4c3b-845e-a6c1f68a26cc
+settings: {}
+order: 2000

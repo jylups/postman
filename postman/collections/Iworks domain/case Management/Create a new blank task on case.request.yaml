@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-runtime/tasks"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "start": 0,
+      "size": 10,
+      "caseInstanceId": "{{case_instance_id}}"
+    }
+settings: {}
+order: 4000

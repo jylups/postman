@@ -1,0 +1,13 @@
+$kind: http-request
+url: https://fmis.senate.gov/procurement-management/api/procurement-management/save-department-org-map
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "department": "Acquisition",
+        "fundCode": "21M5",
+        "orgCode": "SAASOFACQ"
+    }
+settings: {}
+order: 4000

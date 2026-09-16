@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{eiServicesURL}}/api/ei/fetch-transactions-in-group/495"
+method: GET
+settings: {}
+order: 6000

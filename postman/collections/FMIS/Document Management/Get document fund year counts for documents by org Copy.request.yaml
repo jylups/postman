@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/api/workflow/doc/documentsfundyearcount"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+       "orgCode":"{{orgCode}}",
+       "taskName":null,
+       "documentType":null,
+       "fund1":null,
+       "documentCreator":null
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token1}}"
+settings: {}
+order: 7000

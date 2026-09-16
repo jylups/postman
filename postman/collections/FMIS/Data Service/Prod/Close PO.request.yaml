@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://fmis.senate.gov/modern/api/fmis/document/data/v2/document/close/procurement-doc/PSAA22000178
+method: GET
+settings: {}
+order: 21000

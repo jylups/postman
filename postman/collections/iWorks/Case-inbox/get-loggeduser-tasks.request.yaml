@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{inbox-service}}/task/get-group-tasks"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "start": 0,
+        "size": 100,
+        "sort": "createTime",
+        "order": "asc"
+    }
+settings: {}
+order: 3000

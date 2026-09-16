@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://localhost:8083/workflow-service/process-api/runtime/process-instances
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "processDefinitionKey": "simpleProcess",
+        "variables": [
+        {
+          "name": "initiator",
+          "value": "cd11eb3d-79f3-421d-9b2d-fc90b51b255d"
+        },
+        {
+            "name": "listingDbId",
+            "value": "testId"
+        }
+      ]
+    }
+settings: {}
+order: 4000

@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/api/workflow/send/email-notification/summary"
+method: GET
+settings: {}
+order: 5000

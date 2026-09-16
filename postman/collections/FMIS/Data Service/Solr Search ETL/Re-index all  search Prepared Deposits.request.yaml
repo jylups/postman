@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/etl/data/reindex-prepared-deposits"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "startDate": "02/11/2019",
+        "endDate": "02/12/2021"
+    }
+settings: {}
+order: 9000

@@ -1,0 +1,40 @@
+$kind: http-request
+url: localhost:8097/api/reporting/run/report/tags
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "id": null,
+        "reportType": "detailReport",
+        "fundYear": "2023",
+        "groupingBy": null,
+        "departmentName": "JUDICIARY",
+        "departmentCode": null,
+        "vendorId": null,
+        "vendorSuffix": null,
+        "vendorName": null,
+        "appropriationName": null,
+        "appropriationCode": null,
+        "location": null,
+        "locationCode": "JUD",
+        "expenseCategory": null,
+        "expenseCategoryName": null,
+        "includePostedDocumentsOnly": false,
+        "startDate": null,
+        "endDate": null,
+        "orgCode": "JUD",
+        "reportName": "Expense Detail by Location and Budget Category",
+        "createdDate": null,
+        "createUserId": null,
+        "modifiedDate": null,
+        "modifiedUserId": null,
+        "apportionmentCode": "117D",
+        "fundYears": null,
+        "fundYearsSearch": null,
+        "docTypes": null,
+        "docTypesSearch": null,
+        "fromBudget": null
+    }
+settings: {}
+order: 7000

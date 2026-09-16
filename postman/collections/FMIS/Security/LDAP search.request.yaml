@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://localhost:9080/api/uaas/ldap/search/JC84415
+method: GET
+settings: {}
+order: 6000

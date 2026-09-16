@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{server_base}}/process-api/query/tasks"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "start": 0,
+        "size": 10,
+        "sort": "createTime",
+        "order": "asc",
+        "candidateGroupIn": [
+            "AWARD_RECIPIENT",
+            "PROGRAM_STAFF",
+            "PORTFOLIO_MANAGER"
+        ]
+    }
+scripts:
+  - type: afterResponse
+    code: |
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+
+       pm.test("Take the last task ID from the list",function(){
+           const responseJson = pm.response.json();
+           pm.expect(responseJson.data.length).to.greaterThan(0);
+           pm.environment.set('task_id', responseJson.data[responseJson.data.length -1].id);
+       });
+    language: text/javascript
+settings: {}
+order: 3000

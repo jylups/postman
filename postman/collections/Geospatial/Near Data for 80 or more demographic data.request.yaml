@@ -1,0 +1,5 @@
+$kind: http-request
+url: localhost:8080/geo-data/demographic/agg/sse/scensusTract/256/14/near/-79.35703205034764/38.24114238057874/204470.50
+method: GET
+settings: {}
+order: 5000

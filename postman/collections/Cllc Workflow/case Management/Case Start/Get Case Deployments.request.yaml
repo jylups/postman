@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-repository/deployments"
+method: GET
+settings: {}
+order: 3000

@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/data/deposit/prepared-deposits"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "depositForm": 1,
+        "orderBy": "",
+        "direction": "",
+        "page": 0,
+        "size": 10
+    }
+settings: {}
+order: 8000

@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://localhost:8086/api/fmis/data/v2/esr-home-analytic/get-data
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "userId": "jcarvallo@conseqta.com"
+    }
+settings: {}
+order: 4000

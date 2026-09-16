@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://uat.fmis.senate.gov/procurement/api/procurement-management/get-all-departments
+method: GET
+body:
+  type: json
+  content: ""
+settings: {}
+order: 5000

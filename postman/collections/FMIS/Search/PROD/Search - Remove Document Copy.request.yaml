@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://fmis.senate.gov/search/api/fmis/index/remove/document/DFTR20M30008
+method: GET
+settings: {}
+order: 2000

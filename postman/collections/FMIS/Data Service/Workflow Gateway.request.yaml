@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/document/data/v2/workflow/gateway/info/DSEC19230153"
+method: GET
+settings: {}
+order: 31000

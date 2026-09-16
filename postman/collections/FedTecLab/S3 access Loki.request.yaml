@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://s3.dualstack.us-east-2.amazonaws.com/fedteclab-loki
+method: GET
+settings: {}
+order: 6000

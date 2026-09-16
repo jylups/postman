@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{uaasClientURL}}/oidc-client-library/api/idp/create"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "subject": "135d39e0-91f8-4fe9-90e2-8704fc64f7dd",
+    	"email": "jcarvallo@conseqta.com",
+    	"familyName": "Carvallo",
+        "name": "Jorge",
+    	"picture": "https://lh3.googleusercontent.com/a-/AOh14GjxmJsGkRUbE5NVlFe5MrTXbDL3JkLIji0zRwfU=s96-c",
+    	"preferredUsername": "jcarvallo@conseqta.com",
+    	"password": "password"
+    }
+settings: {}
+order: 2000

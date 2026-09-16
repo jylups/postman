@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/document/data/v2/voucher/VSEC22100133"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{token1}}"
+settings: {}
+order: 20000

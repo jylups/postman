@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{eiServicesURL}}/api/ei/transactions-by-key/"
+method: POST
+body:
+  type: json
+  content: |-
+    [562,
+    279]
+settings: {}
+order: 12000

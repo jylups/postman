@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{serverURI}}/api/authenticate"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+       "username":"{{user1}}",
+       "password":"{{password1}}",
+       "applicationId":"FMIS",
+       "rememberMe":true
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      var data = JSON.parse(responseBody);
+
+      tests["There should be a valid id token after authentication"] = data.id_token;
+
+      pm.environment.set('token1',data.id_token);
+    language: text/javascript
+settings: {}
+order: 13000

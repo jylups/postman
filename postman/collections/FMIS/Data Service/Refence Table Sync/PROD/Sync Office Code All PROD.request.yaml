@@ -1,0 +1,8 @@
+$kind: http-request
+url: https://fmis.senate.gov/modern/api/fmis/etl/data/sync/office-code/all
+method: GET
+body:
+  type: json
+  content: '["LEAREPJCC"]'
+settings: {}
+order: 1000

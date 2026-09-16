@@ -1,0 +1,16 @@
+$kind: http-request
+url: https://uat.fmis.senate.gov/workflow/api/workflow/initiate-process
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentType": "directVoucher",
+        "documentSubType": "manuallyInitiated",
+        "documentId": "DMKY20210142",
+        "documentOrgCode": "MKY",
+        "initiator": "JC84415",
+        "initiatorRootOrg": "MKY"
+    }
+settings: {}
+order: 3000

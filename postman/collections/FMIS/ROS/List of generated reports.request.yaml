@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{documentServiceURL}}/api/document/ros/fetch/reports"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "reportType": "ALL",
+        "startDate": null,
+        "endDate": null,
+        "pageSize": 25
+    }
+settings: {}
+order: 23000

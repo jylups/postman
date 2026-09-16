@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://localhost:8080/uaas-rest-client/api/auth/test
+method: GET
+settings: {}
+order: 1000

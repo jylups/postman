@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{backnedapi}}/api/questions/{{question_id}}"
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+
+      pm.test("Store first question ID", function () {
+          let jsonData = pm.response.json();
+          
+          // Ensure the response is an array with at least one item
+          pm.expect(Array.isArray(jsonData)).to.be.true;
+          pm.expect(jsonData.length).to.be.at.least(1);
+
+          // Get the first item's ID and store it in a variable
+          let questionId = jsonData[0].id;
+          pm.environment.set("question_id", questionId); // or use pm.collectionVariables.set(...) if preferred
+          console.log("Stored question_id:", questionId);
+      });
+    language: text/javascript
+settings: {}
+order: 4000

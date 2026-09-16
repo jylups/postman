@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{comm-manager-server}}/communication/cases/{{case_instance_id}}/forum/posts"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "title": "Another investigation Needed",
+        "content": "Does anybody have any information about his Mexican Nationality?",
+        "type": "DISCUSSION",
+        "visibility": "CASE_PARTICIPANTS"
+    }
+settings: {}
+order: 1000

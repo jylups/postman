@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/data/v2/commitId"
+method: GET
+settings: {}
+order: 5000

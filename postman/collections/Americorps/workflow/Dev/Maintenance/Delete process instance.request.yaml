@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{server_base}}/process-api/runtime/process-instances/{{workflowId}}?deleteReason=old"
+method: DELETE
+queryParams:
+  deleteReason: old
+settings: {}
+order: 1000

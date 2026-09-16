@@ -1,0 +1,8 @@
+$kind: http-request
+url: https://fmis.senate.gov/modern/api/fmis/etl/data/traveltext/import-mongo-voucheritnerary/
+method: POST
+body:
+  type: json
+  content: '["2022"]'
+settings: {}
+order: 1000

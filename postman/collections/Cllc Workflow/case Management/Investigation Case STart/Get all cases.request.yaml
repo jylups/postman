@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-query/case-instances"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "start": 0,
+      "size": 10
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+
+       pm.test("Take the last task ID from the list",function(){
+           const responseJson = pm.response.json();
+           pm.expect(responseJson.data.length).to.greaterThan(0);
+           pm.environment.set('case_instance_id', responseJson.data[responseJson.data.length -1].id);
+       });
+    language: text/javascript
+settings: {}
+order: 3000

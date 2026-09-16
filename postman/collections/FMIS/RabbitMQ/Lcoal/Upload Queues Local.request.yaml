@@ -1,0 +1,1893 @@
+$kind: http-request
+url: http://localhost:15672/api/definitions/
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "queues": [
+            {
+                "name": "fmisGlobalDocumentWorkflowVariablesUpdateQueue",
+                "vhost": "/",
+                "durable": false,
+                "auto_delete": false,
+                "arguments": {
+                    "x-dead-letter-exchange": "fmisAnyEventFailedExchange",
+                    "x-dead-letter-routing-key": "fmis.any.event.failed.key",
+                    "x-message-ttl": 3600000
+                }
+            },
+            {
+                "name": "ros-budget-update-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "search-ei-document-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-direct-message-notification-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-posting-response-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-posting-workflow-update-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-vendor-info-payroll-Event-Queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "ros-budget-line-fan-out-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-change-orders-event-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-reference-table-sync-request-queue",
+                "vhost": "/",
+                "durable": false,
+                "auto_delete": false,
+                "arguments": {
+                    "x-dead-letter-exchange": "fmisAnyEventFailedExchange",
+                    "x-dead-letter-routing-key": "fmis.any.event.failed.key",
+                    "x-message-ttl": 3600000
+                }
+            },
+            {
+                "name": "fmis-esr-payment-notification-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-summary-email-notification-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-purchase-request-close.event-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "search-workflow-document-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-procurement-doc-event-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "ros-header-fan-out-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-transaction-status-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-posting-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-document-status-to-task-outcome-event-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-etl-fix-process-variable-update-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "ros-budget-line-update-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-process-variables-document-search.event-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-budget-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "posted-traveltext-retry-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-async-document-detail-event-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "po-number-vc-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisGlobalDocumentDataUpdateQueue",
+                "vhost": "/",
+                "durable": false,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-search-etl-workflow-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisGlobalDocumentSearchUpdateQueue",
+                "vhost": "/",
+                "durable": false,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "search-workflow-document-response-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-esr-migration-mongo-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "sleuth.sleuth",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-messages-queue.parking-lot",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-vendor-info-update-Event-Queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-document-conversion-request-queue",
+                "vhost": "/",
+                "durable": false,
+                "auto_delete": false,
+                "arguments": {
+                    "x-dead-letter-exchange": "fmisDocumentConversionExchange",
+                    "x-dead-letter-routing-key": "fmis.document-conversion.event.failed.request",
+                    "x-message-ttl": 600000
+                }
+            },
+            {
+                "name": "fmis-posting-close-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "etl-fmis-vendor-names-for-vendor-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-voucher-payment-notification-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-Ros-Report-Event-Queue",
+                "vhost": "/",
+                "durable": false,
+                "auto_delete": false,
+                "arguments": {
+                    "x-dead-letter-exchange": "fmisAnyEventFailedExchange",
+                    "x-dead-letter-routing-key": "fmis.rosReport.event.failed.key",
+                    "x-message-ttl": 3600000
+                }
+            },
+            {
+                "name": "fmis-Initiate-Workflow-Process-Event-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-purchase-request-close-complete.event-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-document-void-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisGlobalChangeOrderDataUpdateQueue",
+                "vhost": "/",
+                "durable": false,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-email-notification-response-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-Ros-Report-Section-Event-Queue",
+                "vhost": "/",
+                "durable": false,
+                "auto_delete": false,
+                "arguments": {
+                    "x-dead-letter-exchange": "fmisAnyEventFailedExchange",
+                    "x-dead-letter-routing-key": "fmis.rosReport.event.failed.key",
+                    "x-message-ttl": 3600000
+                }
+            },
+            {
+                "name": "fmis-budget-response-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-Intern-Pay-Report-Event-Queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-etl-process-variable-update-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-search-etl-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-signing-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "ros-budget-fan-out-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-summary-email-user-event-Queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-task-event-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-retreat-posting-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-pr-creator-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisGlobalExpenseDocumentsDataUpdateQueue",
+                "vhost": "/",
+                "durable": false,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-transactions-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "ros-traveltext-update-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "posted-traveltext-update-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-posting-success-document-update-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-posting-close-response-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-purchase-order-close.event-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-document-search-event-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "etl-traveltext-update-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-retreat-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-posting-peoplesoft-response-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-proc-doc-contract-number-etl-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-search-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-etl-document-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-document-conversion-request-failed-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "ros-header-update-queue",
+                "vhost": "/",
+                "durable": false,
+                "auto_delete": false,
+                "arguments": {
+                    "x-dead-letter-exchange": "fmisAnyEventFailedExchange",
+                    "x-dead-letter-routing-key": "fmis.any.event.failed.key",
+                    "x-message-ttl": 3600000
+                }
+            },
+            {
+                "name": "fmis-deposits-posting-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-workflow-fanout.event-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "voucher-invoice-pv-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-Ros-Report-failed-Event-Queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-document-header-status-event-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "traveltext-refresh-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-user-provisioning-Event-Queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-email-notification-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-move-documents-request-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-traveltext-update-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "ros-budget-item-update-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-transaction-status-response-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-event-failed-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "ros-ps-voucher-load-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-data-service-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-posting-peoplesoft_document-response-queue",
+                "vhost": "/",
+                "durable": true,
+                "auto_delete": false,
+                "arguments": {}
+            }
+        ],
+        "exchanges": [
+            {
+                "name": "rosHeaderEventExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisDataServiceExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "rosPsVoucherLoadExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "poNumberVcExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisDocumentHeaderStatusEventsExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisDocumentSearchEventsExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisESRMigrationExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisSearchWorkflowResponseExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisWorkflowTaskEventExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisGlobalDocumentUpdateFanoutExchange",
+                "vhost": "/",
+                "type": "fanout",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "postedTravelTextExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisTableSyncExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "sleuth",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisSummaryEmailUserExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisSearchExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisAsyncDocumentDetailExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "rosHeaderFanOutExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisDocumentStatusToTaskOutcomeEventsExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisPostingExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisEmailNotificationExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisSearchETLWorkflowExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisSearchEIRequestExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisTravelTextExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmis-messages-queueexchange.parking-lot",
+                "vhost": "/",
+                "type": "fanout",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisAnyEventFailedExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisUserProvisioningEventExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisPurchaseOrderCloseEventsExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "travelTextRefreshExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "rosBudgetEventExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisSearchETLExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisProcessVariableEtlExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisDocumentExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "voucherInvoicePvExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "rosBudgetLineItemEventExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisChangeOrderEventsExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "postedTravelTextRetryExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisInternPayReportEventExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "rosBudgetItemEventExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "etlTravelTextExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisDirectMessageNotificationExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisDocumentEtlExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisProcessVariablesDocumentSearchEventsExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisSearchWorkflowRequestExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisProcurementDocEventsExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisTransactionsExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "springCloudHystrixStream",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisDocumentConversionExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "rosTravelTextExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "rosBudgetFanOutExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisPurchaseRequestCloseEventsExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisBudgetExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisVoucherPaymentNotificationExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisInitiateWorkflowProcessEventExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisWorkflowFanoutEventsExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisTransactionStatusExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisEsrPaymentNotificationExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisProcDocContractNumberEtlExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "etlFmisVendorNamesForVendorExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "rosBudgetLineItemFanOutExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisSummaryEmailNotificationExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisprCreatorDocExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisRetreatExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            },
+            {
+                "name": "fmisSigningExchange",
+                "vhost": "/",
+                "type": "topic",
+                "durable": true,
+                "auto_delete": false,
+                "internal": false,
+                "arguments": {}
+            }
+        ],
+        "bindings": [
+            {
+                "source": "etlFmisVendorNamesForVendorExchange",
+                "vhost": "/",
+                "destination": "etl-fmis-vendor-names-for-vendor-queue",
+                "destination_type": "queue",
+                "routing_key": "etl.fmis.vendor.names.for.vendor.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "etlTravelTextExchange",
+                "vhost": "/",
+                "destination": "etl-traveltext-update-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.etl.traveltext.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmis-messages-queueexchange.parking-lot",
+                "vhost": "/",
+                "destination": "fmis-messages-queue.parking-lot",
+                "destination_type": "queue",
+                "routing_key": "",
+                "arguments": {}
+            },
+            {
+                "source": "fmisAnyEventFailedExchange",
+                "vhost": "/",
+                "destination": "fmis-event-failed-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.any.event.failed.key",
+                "arguments": {}
+            },
+            {
+                "source": "fmisAnyEventFailedExchange",
+                "vhost": "/",
+                "destination": "fmis-Ros-Report-failed-Event-Queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.rosReport.event.failed.key",
+                "arguments": {}
+            },
+            {
+                "source": "fmisAsyncDocumentDetailExchange",
+                "vhost": "/",
+                "destination": "fmis-async-document-detail-event-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-async-document-detail-event_routing.request.key",
+                "arguments": {}
+            },
+            {
+                "source": "fmisBudgetExchange",
+                "vhost": "/",
+                "destination": "fmis-budget-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.budget.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisBudgetExchange",
+                "vhost": "/",
+                "destination": "fmis-budget-response-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.budget.event.response",
+                "arguments": {}
+            },
+            {
+                "source": "fmisDataServiceExchange",
+                "vhost": "/",
+                "destination": "fmis-data-service-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.data.service.key",
+                "arguments": {}
+            },
+            {
+                "source": "fmisDirectMessageNotificationExchange",
+                "vhost": "/",
+                "destination": "fmis-direct-message-notification-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.direct.message.notification.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisDocumentConversionExchange",
+                "vhost": "/",
+                "destination": "fmis-Ros-Report-Event-Queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-Ros-Report.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisDocumentConversionExchange",
+                "vhost": "/",
+                "destination": "fmis-document-conversion-request-failed-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.document-conversion.event.failed.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisDocumentConversionExchange",
+                "vhost": "/",
+                "destination": "fmis-document-conversion-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.document-conversion.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisDocumentConversionExchange",
+                "vhost": "/",
+                "destination": "fmis-move-documents-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.move-documents.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisDocumentConversionExchange",
+                "vhost": "/",
+                "destination": "fmis-Ros-Report-Section-Event-Queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.repor.ros.section.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisDocumentEtlExchange",
+                "vhost": "/",
+                "destination": "fmis-etl-document-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-etl-document-request.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisDocumentExchange",
+                "vhost": "/",
+                "destination": "fmis-document-void-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-document.void.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisDocumentHeaderStatusEventsExchange",
+                "vhost": "/",
+                "destination": "fmis-document-header-status-event-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-document-header-status-request.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisDocumentSearchEventsExchange",
+                "vhost": "/",
+                "destination": "fmis-document-search-event-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-document-search.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisDocumentStatusToTaskOutcomeEventsExchange",
+                "vhost": "/",
+                "destination": "fmis-document-status-to-task-outcome-event-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-document-status-to-task-outcome-request.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisESRMigrationExchange",
+                "vhost": "/",
+                "destination": "fmis-esr-migration-mongo-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.esr-migration-mongo.routing.key",
+                "arguments": {}
+            },
+            {
+                "source": "fmisEmailNotificationExchange",
+                "vhost": "/",
+                "destination": "fmis-email-notification-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.email.notification.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisEmailNotificationExchange",
+                "vhost": "/",
+                "destination": "fmis-email-notification-response-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.email.notification.event.response",
+                "arguments": {}
+            },
+            {
+                "source": "fmisEsrPaymentNotificationExchange",
+                "vhost": "/",
+                "destination": "fmis-esr-payment-notification-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.esr.payment.notification.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisGlobalDocumentUpdateFanoutExchange",
+                "vhost": "/",
+                "destination": "fmisGlobalChangeOrderDataUpdateQueue",
+                "destination_type": "queue",
+                "routing_key": "",
+                "arguments": {}
+            },
+            {
+                "source": "fmisGlobalDocumentUpdateFanoutExchange",
+                "vhost": "/",
+                "destination": "fmisGlobalDocumentDataUpdateQueue",
+                "destination_type": "queue",
+                "routing_key": "",
+                "arguments": {}
+            },
+            {
+                "source": "fmisGlobalDocumentUpdateFanoutExchange",
+                "vhost": "/",
+                "destination": "fmisGlobalDocumentSearchUpdateQueue",
+                "destination_type": "queue",
+                "routing_key": "",
+                "arguments": {}
+            },
+            {
+                "source": "fmisGlobalDocumentUpdateFanoutExchange",
+                "vhost": "/",
+                "destination": "fmisGlobalDocumentWorkflowVariablesUpdateQueue",
+                "destination_type": "queue",
+                "routing_key": "",
+                "arguments": {}
+            },
+            {
+                "source": "fmisGlobalDocumentUpdateFanoutExchange",
+                "vhost": "/",
+                "destination": "fmisGlobalExpenseDocumentsDataUpdateQueue",
+                "destination_type": "queue",
+                "routing_key": "",
+                "arguments": {}
+            },
+            {
+                "source": "fmisInitiateWorkflowProcessEventExchange",
+                "vhost": "/",
+                "destination": "fmis-Initiate-Workflow-Process-Event-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-Initiate-Workflow-Process.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisInternPayReportEventExchange",
+                "vhost": "/",
+                "destination": "fmis-Intern-Pay-Report-Event-Queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-Intern-Pay-Report.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisPostingExchange",
+                "vhost": "/",
+                "destination": "fmis-posting-success-document-update-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-posting-success-document-update.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisPostingExchange",
+                "vhost": "/",
+                "destination": "fmis-posting-workflow-update-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-posting-workflow-update.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisPostingExchange",
+                "vhost": "/",
+                "destination": "fmis-deposits-posting-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.deposits.posting.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisPostingExchange",
+                "vhost": "/",
+                "destination": "fmis-posting-close-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.posting.close.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisPostingExchange",
+                "vhost": "/",
+                "destination": "fmis-posting-close-response-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.posting.close.event.response",
+                "arguments": {}
+            },
+            {
+                "source": "fmisPostingExchange",
+                "vhost": "/",
+                "destination": "fmis-posting-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.posting.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisPostingExchange",
+                "vhost": "/",
+                "destination": "fmis-posting-response-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.posting.event.response",
+                "arguments": {}
+            },
+            {
+                "source": "fmisPostingExchange",
+                "vhost": "/",
+                "destination": "fmis-posting-peoplesoft_document-response-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.posting.peoplesoft.document.event.response",
+                "arguments": {}
+            },
+            {
+                "source": "fmisPostingExchange",
+                "vhost": "/",
+                "destination": "fmis-posting-peoplesoft-response-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.posting.peoplesoft.event.response",
+                "arguments": {}
+            },
+            {
+                "source": "fmisProcDocContractNumberEtlExchange",
+                "vhost": "/",
+                "destination": "fmis-proc-doc-contract-number-etl-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.proc.contract.etl.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisProcessVariableEtlExchange",
+                "vhost": "/",
+                "destination": "fmis-etl-fix-process-variable-update-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-etl-fix-process-variable-update.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisProcessVariableEtlExchange",
+                "vhost": "/",
+                "destination": "fmis-etl-process-variable-update-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-etl-process-variable-update.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisProcessVariablesDocumentSearchEventsExchange",
+                "vhost": "/",
+                "destination": "fmis-process-variables-document-search.event-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-process-variables-document-search.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisPurchaseOrderCloseEventsExchange",
+                "vhost": "/",
+                "destination": "fmis-purchase-order-close.event-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-purchase-order-close.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisPurchaseRequestCloseEventsExchange",
+                "vhost": "/",
+                "destination": "fmis-purchase-request-close-complete.event-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-purchase-request-close-complete.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisPurchaseRequestCloseEventsExchange",
+                "vhost": "/",
+                "destination": "fmis-purchase-request-close.event-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-purchase-request-close.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisRetreatExchange",
+                "vhost": "/",
+                "destination": "fmis-retreat-posting-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.retreat.posting.routing.key",
+                "arguments": {}
+            },
+            {
+                "source": "fmisRetreatExchange",
+                "vhost": "/",
+                "destination": "fmis-retreat-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.retreat.routing.key",
+                "arguments": {}
+            },
+            {
+                "source": "fmisSearchEIRequestExchange",
+                "vhost": "/",
+                "destination": "search-ei-document-request-queue",
+                "destination_type": "queue",
+                "routing_key": "search.ei.document.request.routing.key",
+                "arguments": {}
+            },
+            {
+                "source": "fmisSearchETLExchange",
+                "vhost": "/",
+                "destination": "fmis-search-etl-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.search.etl.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisSearchETLWorkflowExchange",
+                "vhost": "/",
+                "destination": "fmis-search-etl-workflow-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.search.etl.workflow.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisSearchExchange",
+                "vhost": "/",
+                "destination": "fmis-search-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.search.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisSearchWorkflowRequestExchange",
+                "vhost": "/",
+                "destination": "search-workflow-document-request-queue",
+                "destination_type": "queue",
+                "routing_key": "search.workflow.document.request.routing.key",
+                "arguments": {}
+            },
+            {
+                "source": "fmisSearchWorkflowResponseExchange",
+                "vhost": "/",
+                "destination": "search-workflow-document-response-queue",
+                "destination_type": "queue",
+                "routing_key": "search.workflow.document.response.routing.key",
+                "arguments": {}
+            },
+            {
+                "source": "fmisSigningExchange",
+                "vhost": "/",
+                "destination": "fmis-signing-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.signing.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisSummaryEmailNotificationExchange",
+                "vhost": "/",
+                "destination": "fmis-summary-email-notification-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.summmary.email.notification.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisSummaryEmailUserExchange",
+                "vhost": "/",
+                "destination": "fmis-summary-email-user-event-Queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-summary-email-user.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisTableSyncExchange",
+                "vhost": "/",
+                "destination": "fmis-reference-table-sync-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.reference.table.sync.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisTransactionStatusExchange",
+                "vhost": "/",
+                "destination": "fmis-transaction-status-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.transaction-status.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisTransactionStatusExchange",
+                "vhost": "/",
+                "destination": "fmis-transaction-status-response-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.transaction-status.event.response",
+                "arguments": {}
+            },
+            {
+                "source": "fmisTransactionsExchange",
+                "vhost": "/",
+                "destination": "fmis-transactions-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.transactions.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisTravelTextExchange",
+                "vhost": "/",
+                "destination": "fmis-traveltext-update-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.traveltext.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisUserProvisioningEventExchange",
+                "vhost": "/",
+                "destination": "fmis-user-provisioning-Event-Queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-user-provisioning.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisUserProvisioningEventExchange",
+                "vhost": "/",
+                "destination": "fmis-vendor-info-payroll-Event-Queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-vendor-info-payroll.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisUserProvisioningEventExchange",
+                "vhost": "/",
+                "destination": "fmis-vendor-info-update-Event-Queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-vendor-info-update.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisVoucherPaymentNotificationExchange",
+                "vhost": "/",
+                "destination": "fmis-voucher-payment-notification-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.voucher.payment.notification.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisWorkflowFanoutEventsExchange",
+                "vhost": "/",
+                "destination": "fmis-workflow-fanout.event-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-workflow-fanout.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisWorkflowTaskEventExchange",
+                "vhost": "/",
+                "destination": "fmis-task-event-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis-task.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "fmisprCreatorDocExchange",
+                "vhost": "/",
+                "destination": "fmis-pr-creator-request-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.pr.etl.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "postedTravelTextExchange",
+                "vhost": "/",
+                "destination": "posted-traveltext-update-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.posted.traveltext.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "postedTravelTextRetryExchange",
+                "vhost": "/",
+                "destination": "posted-traveltext-retry-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.posted.traveltext.retry.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "rosBudgetEventExchange",
+                "vhost": "/",
+                "destination": "ros-budget-update-queue",
+                "destination_type": "queue",
+                "routing_key": "ros.budget.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "rosBudgetEventExchange",
+                "vhost": "/",
+                "destination": "ros-budget-update-queue",
+                "destination_type": "queue",
+                "routing_key": "ros.budget.fan.out.request",
+                "arguments": {}
+            },
+            {
+                "source": "rosBudgetItemEventExchange",
+                "vhost": "/",
+                "destination": "ros-budget-item-update-queue",
+                "destination_type": "queue",
+                "routing_key": "ros.budget.item.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "rosBudgetLineItemEventExchange",
+                "vhost": "/",
+                "destination": "ros-budget-line-update-queue",
+                "destination_type": "queue",
+                "routing_key": "ros.budget.line.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "rosBudgetLineItemEventExchange",
+                "vhost": "/",
+                "destination": "ros-budget-line-update-queue",
+                "destination_type": "queue",
+                "routing_key": "ros.budget.line.fan.out.request",
+                "arguments": {}
+            },
+            {
+                "source": "rosHeaderEventExchange",
+                "vhost": "/",
+                "destination": "ros-header-update-queue",
+                "destination_type": "queue",
+                "routing_key": "ros.header.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "rosHeaderEventExchange",
+                "vhost": "/",
+                "destination": "ros-header-update-queue",
+                "destination_type": "queue",
+                "routing_key": "ros.header.fan.out.request",
+                "arguments": {}
+            },
+            {
+                "source": "rosPsVoucherLoadExchange",
+                "vhost": "/",
+                "destination": "ros-ps-voucher-load-queue",
+                "destination_type": "queue",
+                "routing_key": "ros.ps.voucher.load.request",
+                "arguments": {}
+            },
+            {
+                "source": "rosTravelTextExchange",
+                "vhost": "/",
+                "destination": "ros-traveltext-update-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.ros.traveltext.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "sleuth",
+                "vhost": "/",
+                "destination": "sleuth.sleuth",
+                "destination_type": "queue",
+                "routing_key": "#",
+                "arguments": {}
+            },
+            {
+                "source": "travelTextRefreshExchange",
+                "vhost": "/",
+                "destination": "traveltext-refresh-queue",
+                "destination_type": "queue",
+                "routing_key": "fmis.traveltext.refresh.event.request",
+                "arguments": {}
+            },
+            {
+                "source": "voucherInvoicePvExchange",
+                "vhost": "/",
+                "destination": "voucher-invoice-pv-queue",
+                "destination_type": "queue",
+                "routing_key": "voucher.invoice.pv.request",
+                "arguments": {}
+            }
+        ]
+    }
+auth:
+  type: basic
+  credentials:
+    username: guest
+    password: guest
+settings: {}
+order: 1000

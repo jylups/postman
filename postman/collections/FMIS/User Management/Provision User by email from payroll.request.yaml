@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{payrollServiceURL}}/api/fmis/payroll/provision/user/accounts/email/"
+method: POST
+body:
+  type: json
+  content: '["Sarah_Treado@saa.senate.gov"]'
+settings: {}
+order: 6000

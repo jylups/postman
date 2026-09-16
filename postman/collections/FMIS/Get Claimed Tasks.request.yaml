@@ -1,0 +1,10 @@
+$kind: http-request
+description: Get a list of claimed tasks by user1
+url: "{{serverURI}}/workflow/api/workflow/tasks"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{token1}}"
+settings: {}
+order: 39000

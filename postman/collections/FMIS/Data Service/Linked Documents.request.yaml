@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/document/data/v2/search/linked/documents/{{esrNbr}}"
+method: GET
+settings: {}
+order: 24000

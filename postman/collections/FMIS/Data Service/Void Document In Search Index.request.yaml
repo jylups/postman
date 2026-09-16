@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/index/remove/document/ESR201906475"
+method: GET
+settings: {}
+order: 25000

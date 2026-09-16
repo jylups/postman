@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{comm-manager-server}}/communication/cases/{{case_instance_id}}/forum/posts/{{post_id}}/replies"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "content": "This is another reply"
+    }
+settings: {}
+order: 6000

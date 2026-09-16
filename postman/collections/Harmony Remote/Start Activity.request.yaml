@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://raspberrypi.local:8081/harmony/start
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+    "activityid" : 12410418
+    }
+order: 5000

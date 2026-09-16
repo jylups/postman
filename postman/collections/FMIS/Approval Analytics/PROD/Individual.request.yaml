@@ -1,0 +1,27 @@
+$kind: http-request
+url: http://fmis-data-service-fmis-prod.os1.senate.gov/api/fmis/approval-search/analytic/individual
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "startDate": "08/01/2018",
+        "endDate": "10/21/2020",
+        "docTypes": [
+            "VO",
+            "VC",
+            "TA"
+        ],
+        "workflowSteps": [
+            "DO AP VOUCHER REVIEW",
+            "DO AP DOCUMENT REVIEW",
+            "SENIOR DO AP VOUCHER REVIEW",
+            "SENIOR DO AP DOCUMENT REVIEW",
+            "SENIOR DO AP TRAVEL ADVANCE REVIEW",
+            "DO ACCOUNTING REVIEW",
+            "DO ACCOUNTING VOUCHER REVIEW"
+        ],
+        "approvers": []
+    }
+settings: {}
+order: 2000

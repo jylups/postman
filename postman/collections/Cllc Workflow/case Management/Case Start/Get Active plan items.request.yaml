@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-runtime/plan-item-instances?caseInstanceId={{case_instance_id}}&state=active"
+method: GET
+queryParams:
+  caseInstanceId: "{{case_instance_id}}"
+  state: active
+settings: {}
+order: 13000

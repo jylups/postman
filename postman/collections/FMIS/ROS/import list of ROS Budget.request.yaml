@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/etl/data/ros/export-to-mongo/budget-edits"
+method: POST
+body:
+  type: json
+  content: "[14977]"
+settings: {}
+order: 20000

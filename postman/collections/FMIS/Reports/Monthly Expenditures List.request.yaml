@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:8092/api/fmis/payroll/available/monthly/reports
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "officeCd": "HAW",
+        "officeFundingCd": "HAW",
+        "groupKey": "9",
+        "endDt": null,
+        "officeAbbr": "HAW",
+        "officeTitleTxt": "SENATOR JOSH HAWLEY",
+        "startDt": "2018-11-07",
+        "stateAbbr": "MO",
+        "requestTaFlag": "N"
+    }
+settings: {}
+order: 4000

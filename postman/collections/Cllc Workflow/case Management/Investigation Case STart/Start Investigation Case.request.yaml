@@ -1,0 +1,61 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-runtime/case-instances"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "caseDefinitionKey": "{{case_definition_key}}",
+    "variables": [
+        {
+          "name": "email",
+          "value": "jc@cllc.io"
+        },
+        {
+          "name": "firstName",
+          "value": "Jorge"
+        },
+        {
+          "name": "lastName",
+          "value": "Carvallo"
+        },
+        {
+          "name": "middleInitial",
+          "value": "A"
+        },
+        {
+          "name": "phone",
+          "value": "17034571234"
+        },
+        {
+          "name": "sites",
+          "value": [
+            {
+              "site_date": null,
+              "file": null,
+              "textarea_nzqw0g": "",
+              "site_address": "1730 1st st NW",
+              "site_city": "Washington",
+              "site_state": "DC"
+            }
+          ],
+          "type": "json"
+        }
+      ]
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(201);
+      }
+      );
+
+       pm.test("Take the last case ID from the list",function(){
+           const responseJson = pm.response.json();
+           pm.expect(responseJson.id).to.be.a('string');
+           pm.environment.set('case_instance_id', responseJson.id);
+       });
+    language: text/javascript
+settings: {}
+order: 2000

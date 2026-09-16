@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{searchService}}/api/fmis/index/add/documents"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentNumber": "VSAA22001317",
+        "documentType":"Procurement Voucher"
+    }
+settings: {}
+order: 8000

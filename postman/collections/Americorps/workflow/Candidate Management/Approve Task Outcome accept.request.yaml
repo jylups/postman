@@ -1,0 +1,25 @@
+$kind: http-request
+url: http://localhost:8083/workflow-service/process-api/runtime/tasks/{{task_id}}
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "action": "complete",
+        "variables": [
+            {
+                "name": "taskOutcome",
+                "value": "accept"
+            }
+        ]
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+    language: text/javascript
+settings: {}
+order: 4000

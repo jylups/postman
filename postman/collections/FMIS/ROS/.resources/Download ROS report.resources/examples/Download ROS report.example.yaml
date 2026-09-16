@@ -1,0 +1,85 @@
+$kind: http-example
+request:
+  url: https://uat.fmis.senate.gov/document/api/document/download/619af4e1261fa614f7575d96
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Expires: "0"
+    Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+    X-XSS-Protection: 1; mode=block
+    Pragma: no-cache
+    Content-Disposition: attachment; filename=c3d7b2fa-5169-4e8e-9d07-814936949781Index.csv
+    Date: Mon, 22 Nov 2021 01:42:53 GMT
+    X-Content-Type-Options: nosniff
+    Transfer-Encoding: chunked
+    Content-Type: application/octet-stream
+    X-Application-Context: fmis-web:kubernetes:8080
+  body:
+    type: text
+    content: |
+      "Appropriation Cd","Funding Year","Report Org","Office Title","Appropriation Sort","Office Sort","Funding Sort","Grant Code"
+      "0128","","ANF","AGRICULTURE, NUTRITION & FORESTRY","130","ANF","0","116B"
+      "0128","","ANF","AGRICULTURE, NUTRITION & FORESTRY","130","ANF","0","116C"
+      "0128","","ANF","AGRICULTURE, NUTRITION & FORESTRY","130","ANF","0","116D"
+      "0128","","ANF","AGRICULTURE, NUTRITION & FORESTRY","130","ANF","0","117B"
+      "0128","","ASR","ARMED SERVICES","130","ASR","0","116C"
+      "0128","","ASR","ARMED SERVICES","130","ASR","0","116D"
+      "0128","","ASR","ARMED SERVICES","130","ASR","0","117B"
+      "0128","","BHU","BANKING, HOUSING & URBAN AFFAIRS","130","BHU","0","116B"
+      "0128","","BHU","BANKING, HOUSING & URBAN AFFAIRS","130","BHU","0","116C"
+      "0128","","BHU","BANKING, HOUSING & URBAN AFFAIRS","130","BHU","0","116D"
+      "0128","","BHU","BANKING, HOUSING & URBAN AFFAIRS","130","BHU","0","117B"
+      "0128","","BUD","BUDGET","130","BUD","0","116C"
+      "0128","","BUD","BUDGET","130","BUD","0","116D"
+      "0128","","BUD","BUDGET","130","BUD","0","117B"
+      "0128","","CST","COMMERCE, SCIENCE & TRANSPORTATION","130","CST","0","116D"
+      "0128","","CST","COMMERCE, SCIENCE & TRANSPORTATION","130","CST","0","117B"
+      "0128","","ENR","ENERGY & NATURAL RESOURCES","130","ENR","0","116B"
+      "0128","","ENR","ENERGY & NATURAL RESOURCES","130","ENR","0","116C"
+      "0128","","ENR","ENERGY & NATURAL RESOURCES","130","ENR","0","116D"
+      "0128","","ENR","ENERGY & NATURAL RESOURCES","130","ENR","0","117B"
+      "0128","","EPW","ENVIRONMENT & PUBLIC WORKS","130","EPW","0","116C"
+      "0128","","EPW","ENVIRONMENT & PUBLIC WORKS","130","EPW","0","116D"
+      "0128","","EPW","ENVIRONMENT & PUBLIC WORKS","130","EPW","0","117B"
+      "0128","","ETH","ETHICS","130","X","0","338"
+      "0128","","FIN","FINANCE","130","FIN","0","116C"
+      "0128","","FIN","FINANCE","130","FIN","0","116D"
+      "0128","","FIN","FINANCE","130","FIN","0","117B"
+      "0128","","FRE","FOREIGN RELATIONS","130","FRE","0","116B"
+      "0128","","FRE","FOREIGN RELATIONS","130","FRE","0","116C"
+      "0128","","FRE","FOREIGN RELATIONS","130","FRE","0","116D"
+      "0128","","FRE","FOREIGN RELATIONS","130","FRE","0","117B"
+      "0128","","GAF","HOMELAND SECURITY & GOVERNMENTAL AFFAIRS","130","GAF","0","116C"
+      "0128","","GAF","HOMELAND SECURITY & GOVERNMENTAL AFFAIRS","130","GAF","0","116D"
+      "0128","","GAF","HOMELAND SECURITY & GOVERNMENTAL AFFAIRS","130","GAF","0","117B"
+      "0128","","HLP","HEALTH, EDUCATION, LABOR, AND PENSIONS","130","HLP","0","116C"
+      "0128","","HLP","HEALTH, EDUCATION, LABOR, AND PENSIONS","130","HLP","0","116D"
+      "0128","","HLP","HEALTH, EDUCATION, LABOR, AND PENSIONS","130","HLP","0","117B"
+      "0128","","IAF","INDIAN AFFAIRS","130","IAF","0","116D"
+      "0128","","IAF","INDIAN AFFAIRS","130","IAF","0","117B"
+      "0128","","INL","INTELLIGENCE","130","INL","0","116D"
+      "0128","","INL","INTELLIGENCE","130","INL","0","117B"
+      "0128","","JCO","JOINT COMMITTEES","130","X","0","117B"
+      "0128","","JUD","JUDICIARY","130","JUD","0","116C"
+      "0128","","JUD","JUDICIARY","130","JUD","0","116D"
+      "0128","","JUD","JUDICIARY","130","JUD","0","117B"
+      "0128","","OCA","OFFICE OF CONGRESSIONAL ACCESSIBILITY SERVICES","130","X","0","117B"
+      "0128","","RAD","RULES & ADMINISTRATION","130","RAD","0","116C"
+      "0128","","RAD","RULES & ADMINISTRATION","130","RAD","0","116D"
+      "0128","","RAD","RULES & ADMINISTRATION","130","RAD","0","117B"
+      "0128","","SBU","SMALL BUSINESS AND ENTREPRENEURSHIP","130","SBU","0","116B"
+      "0128","","SBU","SMALL BUSINESS AND ENTREPRENEURSHIP","130","SBU","0","116D"
+      "0128","","SBU","SMALL BUSINESS AND ENTREPRENEURSHIP","130","SBU","0","117B"
+      "0128","","SCA","SPECIAL COMMITTEE ON AGING","130","SCA","0","116D"
+      "0128","","SCA","SPECIAL COMMITTEE ON AGING","130","SCA","0","117B"
+      "0128","","SSECIN","CAUCUS - INTERNATIONAL NARCOTICS CONTROL","130","SSECIN","0","117B"
+      "0128","","SSELGC","LEGAL COUNSEL","130","X","0","117B"
+      "0128","","SSELSC","LEGISLATIVE COUNSEL","130","X","0","117B"
+      "0128","","SSEMISCON","CONSULTANTS","130","085SSEMISCON","0","117B"
+      "0128","","SSEMISRRR","RESOLUTION & REORGANIZATION RESERVE","130","120SSEMISRRR","0","117B"
+      "0128","","SSEMISUNA","EMERGENCY APPROPRIATION PUBLIC LAW 109-13","130","Z","0","117B"
+      "0128","","VAF","VETERANS' AFFAIRS","130","VAF","0","116D"
+      "0128","","VAF","VETERANS' AFFAIRS","130","VAF","0","117B"
+order: 1000

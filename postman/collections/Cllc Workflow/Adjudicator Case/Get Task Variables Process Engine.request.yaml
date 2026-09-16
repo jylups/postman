@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{server_base}}/process-api/runtime/tasks/{{task_id}}/variables"
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+
+       pm.test("Take the last task ID from the list",function(){
+           const responseJson = pm.response.json();
+       });
+    language: text/javascript
+settings: {}
+order: 11000

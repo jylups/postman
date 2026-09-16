@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/document/data/v2/direct-voucher/DKNN20210177"
+method: GET
+settings: {}
+order: 1000

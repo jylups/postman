@@ -1,0 +1,23 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-repository/case-definitions?startablePermissionCheck=true"
+method: GET
+queryParams:
+  startablePermissionCheck: "true"
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+
+       pm.test("Take the last task ID from the list",function(){
+           const responseJson = pm.response.json();
+           pm.expect(responseJson.data.length).to.greaterThan(0);
+           pm.environment.set('case_definition_key', responseJson.data[responseJson.data.length -1].key);
+           pm.environment.set('case_diagram_location', responseJson.data[responseJson.data.length -1].diagramResource);
+
+       });
+    language: text/javascript
+settings: {}
+order: 1000

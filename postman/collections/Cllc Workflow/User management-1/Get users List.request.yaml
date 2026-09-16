@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{user_management_service}}/admin/user-management/users?page=0&size=20&sortBy=email&sortDirection=asc"
+method: GET
+queryParams:
+  page: "0"
+  size: "20"
+  sortBy: email
+  sortDirection: asc
+settings: {}
+order: 1000

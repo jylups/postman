@@ -1,0 +1,6 @@
+$kind: http-request
+url: https://case-management-ui.jylups.com/workflow-service/cmmn-api/cmmn-repository/deployments/beb6d990-7df1-11f0-ab5d-6aa7a352c9e3/resources/rfaCaseManagement.rfaCaseManagement.png
+method: GET
+settings: {}
+examples: ./.resources/Test for diagram.resources/examples
+order: 1000

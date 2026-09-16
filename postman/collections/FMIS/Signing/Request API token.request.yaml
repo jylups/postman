@@ -1,0 +1,15 @@
+$kind: http-request
+url: https://signer-sandbox-gov.esignlive.com/apitoken/clientApp/accessToken
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "clientId": "185c6eb533f001dd80027e0027b",
+        "secret": "6879647261077dd7054507f2d61c56c6a54ee1ae9f9d4d1d28380cff6e260621edcc7bc6",
+        "type": "OWNER"
+    }
+auth:
+  type: noauth
+settings: {}
+order: 3000

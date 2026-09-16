@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{openweb_server}}/api/v1/files"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{ai_api_token}}"
+settings: {}
+order: 1000

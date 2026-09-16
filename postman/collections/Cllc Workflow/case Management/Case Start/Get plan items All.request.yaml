@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-runtime/plan-item-instances?caseInstanceId={{case_instance_id}}"
+method: GET
+queryParams:
+  - key: state
+    value: active
+    disabled: true
+  - key: caseInstanceId
+    value: "{{case_instance_id}}"
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+
+       pm.test("Take the last task ID from the list",function(){
+           const responseJson = pm.response.json();
+           pm.expect(responseJson.data.length).to.greaterThan(0);
+           pm.environment.set('process_plan_item_id', responseJson.data[responseJson.data.length -1].id);
+           
+       });
+    language: text/javascript
+settings: {}
+order: 15000

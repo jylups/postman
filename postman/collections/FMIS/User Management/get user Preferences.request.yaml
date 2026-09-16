@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://edge.fmis.senate.gov/umanagement/api/fmis/um/v2/fetch/user-preferences
+method: GET
+settings: {}
+order: 2000

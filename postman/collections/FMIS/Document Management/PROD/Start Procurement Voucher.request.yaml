@@ -1,0 +1,14 @@
+$kind: http-request
+url: https://fmis.senate.gov/workflow/api/workflow/initiate-process
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentType": "invoiceVoucher",
+        "documentId": "VSAA22205931",
+        "documentOrgCode": "SAACPDFACESE",
+        "initiator": "CJ41499"
+    }
+settings: {}
+order: 16000

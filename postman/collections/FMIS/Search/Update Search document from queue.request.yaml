@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{searchService}}/api/fmis/index/add/documents"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentNumber": "QSAA22100081",
+        "documentType":"Purchase Request"
+    }
+settings: {}
+order: 4000

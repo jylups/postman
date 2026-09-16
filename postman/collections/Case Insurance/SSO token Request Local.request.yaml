@@ -1,0 +1,26 @@
+$kind: http-request
+url: https://keycloak.conseqta.localhost:8443/auth/realms/Conseqta/protocol/openid-connect/token
+method: POST
+headers:
+  Content-Type: application/x-www-form-urlencoded
+body:
+  type: urlencoded
+  content:
+    client_id: conseqta-client
+    username: demoinvestor
+    password: test
+    grant_type: password
+    client_secret: 5a63612b-c419-40fe-8d01-2f91689bb4c0
+    scope: openid profile email offline_access roles
+scripts:
+  - type: afterResponse
+    code: |
+      var data = JSON.parse(responseBody);
+
+      tests["There should be a valid id token after authentication"] = data.access_token;
+
+      pm.environment.set('access_token',data.access_token);
+      pm.environment.set('refresh_token',data.refresh_token);
+    language: text/javascript
+settings: {}
+order: 5000

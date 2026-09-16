@@ -1,0 +1,12 @@
+$kind: http-request
+url: https://fmis.senate.gov/search/api/fmis/index/add/documents
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentNumber": "RSAA22000435",
+        "documentType":"Receiving Report"
+    }
+settings: {}
+order: 5000

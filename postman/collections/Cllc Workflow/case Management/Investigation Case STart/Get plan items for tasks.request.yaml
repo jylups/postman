@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-runtime/plan-item-instances?caseInstanceId={{case_instance_id}}&state=enabled&planItemDefinitionType=humantask"
+method: GET
+queryParams:
+  caseInstanceId: "{{case_instance_id}}"
+  state: enabled
+  planItemDefinitionType: humantask
+settings: {}
+order: 15000

@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{payrollServiceURL}}/api/fmis/payroll/fetch/intern-allocation/report"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "officeCd": "SAA",
+        "officeFundingCd": "SAA   ",
+        "groupKey": "10",
+        "endDt": null,
+        "officeAbbr": "SAA",
+        "officeTitleTxt": "OFFC OF SERGEANT AT ARMS & DOORKEEPER   ",
+        "startDt": "1998-10-02",
+        "stateAbbr": "  ",
+        "requestTaFlag": "N"
+    }
+settings: {}
+order: 1000

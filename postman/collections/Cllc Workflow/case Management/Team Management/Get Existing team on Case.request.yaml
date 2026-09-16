@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{user_management_service}}/api/v1/team-management/members/{{case_instance_id}}"
+method: GET
+settings: {}
+order: 2000

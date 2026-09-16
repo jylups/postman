@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{serverURI}}/workflow/api/workflow/initiate-process"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentType": "invoiceVoucher",
+        "initiator": "RH84415",
+        "documentId": "VSAA22002372",
+        "initiatorRootOrg": "SAA",
+        "documentOrgCode": "SAASOFFMAFMA"
+    	
+    }
+settings: {}
+order: 15000

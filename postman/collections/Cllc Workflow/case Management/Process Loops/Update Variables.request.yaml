@@ -1,0 +1,52 @@
+$kind: http-request
+url: "{{server_base}}/process-api/runtime/tasks/{{task_id}}/variables"
+method: POST
+body:
+  type: json
+  content: |-
+    [
+        {
+            "name": "firstName",
+            "type": "string",
+            "value": "Jorge",
+            "scope": "global"
+        },
+        {
+            "name": "lastName",
+            "type": "string",
+            "value": "Carvallo",
+            "scope": "global"
+        },
+        {
+            "name": "middleInitial",
+            "type": "string",
+            "value": "A",
+            "scope": "global"
+        },
+        {
+            "name": "phone",
+            "type": "string",
+            "value": "1234567890",
+            "scope": "global"
+        },
+        {
+            "name": "programCode",
+            "type": "string",
+            "value": "vista",
+            "scope": "global"
+        },
+        {
+            "name": "initiator",
+            "type": "string",
+            "value": "jc@cllc.io",
+            "scope": "global"
+        },
+        {
+            "name": "email",
+            "type": "string",
+            "value": "jc@cllc.io",
+            "scope": "global"
+        }
+    ]
+settings: {}
+order: 10000

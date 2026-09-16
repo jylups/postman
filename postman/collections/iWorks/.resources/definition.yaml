@@ -1,0 +1,10 @@
+$kind: collection
+variables:
+  server_base: http://localhost:8083/workflow-service
+  user_id: admin
+auth:
+  - id: 17c7eb29-6c07-4cb8-a1f0-79c4d92ffce4
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{access_token}}"

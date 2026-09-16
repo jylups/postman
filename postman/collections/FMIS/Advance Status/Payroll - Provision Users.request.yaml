@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://uat.fmis.senate.gov/payroll/api/fmis/payroll/provision/user/accounts
+method: GET
+settings: {}
+order: 6000

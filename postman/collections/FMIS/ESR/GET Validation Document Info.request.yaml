@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{esrService}}/api/esr/validation/fetch/{{esrNbr}}"
+method: GET
+settings: {}
+order: 2000

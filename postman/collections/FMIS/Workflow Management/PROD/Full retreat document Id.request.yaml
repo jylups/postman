@@ -1,0 +1,8 @@
+$kind: http-request
+url: https://fmis.senate.gov/modern/api/fmis/data/v2/retreats/get-full-retreat-by-document-id
+method: POST
+body:
+  type: json
+  content: RTCRU2022003
+settings: {}
+order: 15000

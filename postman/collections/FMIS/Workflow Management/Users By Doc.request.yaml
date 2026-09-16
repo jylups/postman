@@ -1,0 +1,27 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/api/workflow/admin/documents/usersbydocs?size=10&page=0"
+method: POST
+headers:
+  Content-Type: application/json
+queryParams:
+  size: "10"
+  page: "0"
+body:
+  type: text
+  content: |-
+    {
+        "documentCreator": null,
+        "documentType": "travelAdvance",
+        "orgCode": null,
+        "fund1": null,
+        "searchFilter": null,
+        "taskName": null,
+        "taskOutcome": null,
+        "workflowStatus": null
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token1}}"
+settings: {}
+order: 7000

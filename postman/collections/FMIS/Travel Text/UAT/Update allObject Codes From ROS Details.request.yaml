@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{dataServiceUAT}}/api/fmis/etl/data/traveltext/update-objecttitle/documents"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentIds": [
+            "CD202000285"
+        ]
+    }
+settings: {}
+order: 3000

@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{etlJobServiceURL}}/api/etl/jobs/run/paymentDataEtlJob"
+method: GET
+settings: {}
+order: 3000

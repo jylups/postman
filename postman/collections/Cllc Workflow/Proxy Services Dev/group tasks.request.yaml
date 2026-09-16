@@ -1,0 +1,12 @@
+$kind: http-request
+url: https://case-management-ui.jylups.com/case-inbox-rest/case-inbox-rest/task/get-group-tasks
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "start": 0,
+      "size": 10
+    }
+settings: {}
+order: 1000

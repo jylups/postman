@@ -1,0 +1,24 @@
+$kind: http-request
+url: http://localhost:8097/api/budget/formulation/dashboard/aggregation
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "fundYear": 2022,
+        "budgetVersion": null,
+        "division": null,
+        "shortFallPageSize": 5,
+        "shortFallPage": 0,
+        "shortFallTextSearch": "",
+        "shortFallDirection": "ASC",
+        "shortFallSortColumn": "jobCode",
+        "department": null,
+        "budgetScenarioPageSize": 5,
+        "budgetScenarioPage": 0,
+        "budgetScenarioTextSearch": "",
+        "budgetScenarioDirection": "ASC",
+        "budgetScenarioSortColumn": "whatIfTitle"
+    }
+settings: {}
+order: 1000

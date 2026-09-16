@@ -1,0 +1,6 @@
+$kind: http-request
+url: https://uat.fmis.senate.gov/document/api/document/download/619af4e1261fa614f7575d96
+method: GET
+settings: {}
+examples: ./.resources/Download ROS report.resources/examples
+order: 18000

@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{server_base}}/process-api/repository/process-definitions/{{process_definition_id}}/form-definitions"
+method: GET
+scripts:
+  - type: afterResponse
+    code: |
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+      const responseArray = pm.response.json().data;
+      const firstItem = responseArray[0];
+
+      // pm.test("First item exists and is an object", () => {
+      //         pm.expect(firstItem).to.be.an('object'); // Or whatever type you expect
+      //         pm.environment.set('process_definition_id',firstItem.id);
+      // });
+    language: text/javascript
+settings: {}
+order: 3000

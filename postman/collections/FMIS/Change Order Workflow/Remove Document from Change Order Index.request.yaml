@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/document/data/v2/orders/remove-from-search/{{documentId}}"
+method: POST
+settings: {}
+order: 3000

@@ -1,0 +1,16 @@
+$kind: http-request
+url: https://fmis.senate.gov/workflow/api/workflow/initiate-process
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentType": "expenseSummaryReport",
+        "documentSubType": "travel",
+        "documentId": "ESR202212613",
+        "documentOrgCode": "HOE",
+        "initiator": "ls40626",
+        "initiatorRootOrg": "HOE"
+    }
+settings: {}
+order: 18000

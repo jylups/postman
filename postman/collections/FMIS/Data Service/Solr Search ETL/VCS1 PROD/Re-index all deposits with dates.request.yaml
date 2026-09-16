@@ -1,0 +1,12 @@
+$kind: http-request
+url: https://fmis-web-prod-fmis-prod.apps.vcs1.senate.gov/modern/api/fmis/etl/data/reindex-deposits
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "startDate": "01/01/2018",
+        "endDate": "08/26/2022"
+    }
+settings: {}
+order: 2000

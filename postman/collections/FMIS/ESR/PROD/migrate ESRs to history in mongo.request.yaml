@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{esrService}}/api/esr-etl/ers-hisotry/migrate-missing"
+method: GET
+settings: {}
+order: 3000

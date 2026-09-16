@@ -1,0 +1,6 @@
+name: Conseqta Infrastructure
+color: null
+values:
+  - key: token
+    value: null
+    enabled: true

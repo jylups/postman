@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{workflowServiceURI}} /api/workflow/complete-task"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "taskId": "7949206",
+        "taskName": "Review Expense Summary Report",
+        "documentId": "ESR202035084",
+        "processInstanceId": "7854685",
+        "taskOutcome": "Approve",
+        "documentInfo": {}
+    }
+settings: {}
+order: 4000

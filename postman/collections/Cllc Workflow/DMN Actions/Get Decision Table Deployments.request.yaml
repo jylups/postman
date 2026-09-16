@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{server_base}}/dmn-api/dmn-repository/deployments"
+method: GET
+settings: {}
+order: 4000

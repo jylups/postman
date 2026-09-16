@@ -1,0 +1,84 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-runtime/tasks/{{task_id}}"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "action": "complete",
+      "variables": [
+        {
+          "name": "email",
+          "value": "jc@cllc.io",
+          "type": "string"
+        },
+        {
+          "name": "firstName",
+          "value": "Jorge",
+          "type": "string"
+        },
+        {
+          "name": "lastName",
+          "value": "Carvallo",
+          "type": "string"
+        },
+        {
+          "name": "middleInitial",
+          "value": "A",
+          "type": "string"
+        },
+        {
+          "name": "phone",
+          "value": "+17034571234",
+          "type": "string"
+        },
+        {
+          "name": "sites",
+          "value": [
+            {
+              "site_date": null,
+              "file": null,
+              "textarea_nzqw0g": "",
+              "site_address": "1730 1st st NW",
+              "site_city": "Washington",
+              "site_state": "DC"
+            }
+          ],
+          "type": "json"
+        },
+        {
+          "name": "sites_0_site_address",
+          "value": "1730 1st st NW",
+          "type": "string"
+        },
+        {
+          "name": "sites_0_site_city",
+          "value": "Washington",
+          "type": "string"
+        },
+        {
+          "name": "sites_0_site_state",
+          "value": "DC",
+          "type": "string"
+        },
+        {
+          "name": "sites_0_textarea_nzqw0g",
+          "value": "",
+          "type": "string"
+        }
+      ]
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+
+       pm.test("Take the last task ID from the list",function(){
+           const responseJson = pm.response.json();
+       });
+    language: text/javascript
+settings: {}
+order: 9000

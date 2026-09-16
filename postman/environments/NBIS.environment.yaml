@@ -1,0 +1,63 @@
+name: NBIS
+color: null
+values:
+  - key: user
+    value: activiti_user
+    enabled: true
+  - key: password
+    value: pass
+    enabled: true
+  - key: investigator1User
+    value: investigator1
+    enabled: true
+  - key: investigator1Password
+    value: welcome1
+    enabled: true
+  - key: Investigator2User
+    value: investigator2
+    enabled: true
+  - key: investigator2Password
+    value: welcome1
+    enabled: true
+  - key: SystemStarter
+    value: system
+    enabled: true
+  - key: SystemStarterPassword
+    value: welcome1
+    enabled: true
+  - key: SampleCaseID
+    value: "12345"
+    enabled: true
+  - key: sf86TaskId
+    value: "39"
+    enabled: true
+  - key: wandaTaskID
+    value: "76"
+    enabled: true
+  - key: wandaTaskID1
+    value: "73"
+    enabled: true
+  - key: wandaTaskID2
+    value: "76"
+    enabled: true
+  - key: wandaTaskID3
+    value: "78"
+    enabled: true
+  - key: MikeShulerID1
+    value: "80"
+    enabled: true
+  - key: MikeShulerID2
+    value: "83"
+    enabled: true
+  - key: MikeShulerID3
+    value: "85"
+    enabled: true
+  - key: SamanthaTaskID1
+    value: "117"
+    enabled: true
+  - key: MiltonID1
+    value: "122"
+    enabled: true
+  - key: serverURI
+    value: localhost:8080
+    enabled: true

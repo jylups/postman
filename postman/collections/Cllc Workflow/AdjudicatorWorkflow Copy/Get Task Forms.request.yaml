@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{server_base}}/process-api/runtime/tasks/{{task_id}}/form"
+method: GET
+settings: {}
+order: 7000

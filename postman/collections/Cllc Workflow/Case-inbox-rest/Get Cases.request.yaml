@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{case-inbox-rest-server}}/case-docket/get-user-cases"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "start": 0,
+      "size": 10
+    }
+settings: {}
+order: 1000

@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://{{CaseDevServerURL}}/user
+method: GET
+settings: {}
+order: 11000

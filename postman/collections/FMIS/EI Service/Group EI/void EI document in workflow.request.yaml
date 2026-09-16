@@ -1,0 +1,28 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/workflow/api/workflow/void"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "taskId": "2b1f9ef1-d504-11eb-a8f6-da9b92f91b4d",
+        "processInstanceId": "2b1c919e-d504-11eb-a8f6-da9b92f91b4d",
+        "taskOutcome": null,
+        "taskName": "Direct Voucher Create",
+        "documentId": "DSCH20190120",
+        "status": "ACTIVE",
+        "errorMessage": null,
+        "documentType": "directVoucher",
+        "processInitiator": "DOAP",
+        "taskAssignee": "DOAP",
+        "releaseAction": false,
+        "voidAction": true,
+        "claimAction": false,
+        "unSubmitAction": false,
+        "validationErrors": null,
+        "documentInfo": null,
+        "completeSync": false,
+        "rulesPOSkip": false
+    }
+settings: {}
+order: 11000

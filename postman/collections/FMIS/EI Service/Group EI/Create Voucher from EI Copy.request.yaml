@@ -1,0 +1,31 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/document/data/v2/create/direct-voucher-from-group-ei/"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "electronicInvoices": [],
+      "groupElectronicInvoices": [
+        {
+          "groupTransactionsKey": 791,
+          "groupTransactionsName": "coles group",
+          "electronicInvoicesList": [
+            4721,
+            4244
+          ],
+          "groupAmount": 689.05,
+          "remainingBalance": 689.05,
+          "minTransactionDateString": "02-22-2019",
+          "maxTransactionDateString": "02-27-2019",
+          "minTransactionDate": null,
+          "maxTransactionDate": null,
+          "minPostingDateString": "02-25-2019",
+          "maxPostingDateString": "03-01-2019"
+        }
+      ],
+      "startDate": "02-22-2019",
+      "endDate": "02-27-2019"
+    }
+settings: {}
+order: 2000

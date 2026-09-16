@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/api/workflow/admin/documents/documentstatusandpercentage"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+        "documentCreator": null,
+        "documentType": "expenseSummaryReport",
+        "orgCode": null,
+        "fund1": null,
+        "searchFilter": "1234",
+        "taskName": null,
+        "taskOutcome": null,
+        "workflowStatus": null
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token1}}"
+settings: {}
+order: 9000

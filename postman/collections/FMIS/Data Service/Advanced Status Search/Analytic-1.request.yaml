@@ -1,0 +1,36 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/advance-status/analytic-1"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "startDateBegin": "01/01/2020",
+        "startDateEnd": "12/31/2020",
+        "endDateBegin": "1/01/2020",
+        "endDateEnd": "12/31/2020",
+        "officeCds": [
+            "CRP",
+            "CTZ",
+            "DUC",
+            "FIS",
+            "GAR",
+            "JUD",
+            "LEE",
+            "SAACPDOODOOD",
+            "SAASOFFMAFMA",
+            "STZ",
+            "TES",
+            "TOO",
+            "WRN",
+            "WRR",
+            "ZSA"
+        ],
+        "vendorNbrs": [],
+        "statuses": [
+            "REPAYMENT_PENDING",
+            "PAID_ADVANCE"
+        ]
+    }
+settings: {}
+order: 2000

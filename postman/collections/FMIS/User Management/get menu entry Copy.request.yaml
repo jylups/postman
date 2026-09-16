@@ -1,0 +1,15 @@
+$kind: http-request
+url: https://uat.fmis.senate.gov/umanagement/api/fmis/um/menu-routing/fetch/menus
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "menuSubHeader": "Cloud",
+        "menuHeader": "Signing",
+        "userName": "JC84415",
+        "service": "gov.senate.fmis.signing",
+        "context": "gov.senate.fmis.signing"
+    }
+settings: {}
+order: 11000

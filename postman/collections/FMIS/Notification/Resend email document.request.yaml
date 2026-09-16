@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{notificationService}}/api/notification/resend/success/{{emailIdToSend}}"
+method: POST
+settings: {}
+order: 3000

@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/data/v2/retreats/check-if-docs-good"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "taskStatus": null,
+        "retreatId": "612fe5069cbe56000171fa72",
+        "retreatStatus": "Saved"
+    }
+settings: {}
+order: 5000

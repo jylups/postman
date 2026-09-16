@@ -1,0 +1,18 @@
+name: Globals
+values:
+  - key: token
+    value: ""
+    enabled: true
+  - key: keycloakServer
+    value: https://sso.conseqta.io
+    enabled: true
+  - key: clientId
+    value: development-client
+    enabled: true
+  - key: clientSecret
+    value: b901099f-131f-43c2-9322-843482efb91f
+    enabled: true
+  - key: |
+      access_token
+    value: ""
+    enabled: true

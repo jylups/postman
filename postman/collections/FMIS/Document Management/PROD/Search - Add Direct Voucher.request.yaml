@@ -1,0 +1,12 @@
+$kind: http-request
+url: https://fmis.senate.gov/search/api/fmis/index/add/documents
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentNumber": "DBRN20190275",
+        "documentType":"Direct Voucher"
+    }
+settings: {}
+order: 6000

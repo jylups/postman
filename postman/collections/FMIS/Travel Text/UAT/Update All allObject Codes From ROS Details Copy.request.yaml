@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceUAT}}/api/fmis/etl/data/traveltext/update-objecttitle/all/documents"
+method: GET
+settings: {}
+order: 5000

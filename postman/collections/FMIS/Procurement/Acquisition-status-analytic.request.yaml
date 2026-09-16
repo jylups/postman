@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/contracts-mgmt/v2/acquisition-status-analytics"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "searchFilter": null,
+        "acquisitionStatus": null,
+        "contractStatus": null,
+        "contractType": null,
+        "awardStatus": null,
+        "rulesAction": null
+    }
+settings: {}
+order: 1000

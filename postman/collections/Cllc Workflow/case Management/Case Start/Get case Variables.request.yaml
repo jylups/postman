@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-runtime/case-instances/{{case_instance_id}}/variables"
+method: GET
+settings: {}
+order: 12000

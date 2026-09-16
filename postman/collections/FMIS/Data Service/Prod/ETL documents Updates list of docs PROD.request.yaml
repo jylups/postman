@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/etl/data/reindex-all-esr"
+method: GET
+body:
+  type: json
+  content: '["ESR202100592"]'
+settings: {}
+order: 13000

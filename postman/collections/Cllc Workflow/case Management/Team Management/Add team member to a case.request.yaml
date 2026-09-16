@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{user_management_service}}/api/v1/team-management/assign-team-to-case"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "teamName": "Los Lobos",
+      "caseInstanceId": "{{case_instance_id}}",
+      "teamMembers": [
+        {
+          "subjectId": "{{team_subject}}",
+          "caseRole": "READ"
+        }
+      ]
+    }
+settings: {}
+order: 3000

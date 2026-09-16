@@ -1,0 +1,1 @@
+This workspace contains all your collections and environments, as well as any monitors, mock servers or integrations created on them.

@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{server_base}}/process-api/history/historic-task-instances?processInstanceId={{candidate_process_id}}"
+method: GET
+queryParams:
+  processInstanceId: "{{candidate_process_id}}"
+settings: {}
+order: 4000

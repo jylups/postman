@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceUAT}}/api/fmis/document/data/v2/check/budget/QSAA22200796"
+method: GET
+settings: {}
+order: 2000

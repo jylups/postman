@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{inbox-service}}/task/columns"
+method: GET
+headers:
+  - key: ""
+    value: ""
+    disabled: true
+settings: {}
+order: 4000

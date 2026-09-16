@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{eiServicesURL}}/api/ei/archived/SAASOFPAGPAG/travel/0/49/15?orderBy=Des&direction=asc&filterBy=CUPS"
+method: GET
+queryParams:
+  orderBy: Des
+  direction: asc
+  filterBy: CUPS
+settings: {}
+order: 4000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:5273/api/workbaseket/vista
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "start": 0,
+        "size": 10,
+        "sort": "createTime",
+        "order": "asc"
+    }
+settings: {}
+order: 1000

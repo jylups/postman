@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{user_management_service}}/cases/available-users/{{case_instance_id}}?page=0&size=20"
+method: GET
+queryParams:
+  page: "0"
+  size: "20"
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+
+       pm.test("Take the First User from the list",function(){
+           const responseJson = pm.response.json();
+           pm.expect(responseJson.users.length).to.greaterThan(0);
+           pm.environment.set('team_subject', responseJson.users[0].subject);
+       });
+    language: text/javascript
+settings: {}
+order: 1000

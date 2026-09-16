@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{worklogService}}/worklog/api/admin/person-hours-work-type"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "worklogUser": null,
+        "worklogEndDate": "2020-06-07 00:00",
+        "projectKey": null,
+        "worklogStartDate": "2020-06-01 00:00",
+        "status": null,
+        "trendEndDate": null,
+        "trendStartDate": null
+    }
+settings: {}
+order: 13000

@@ -1,0 +1,16 @@
+$kind: http-request
+url: https://fmis.senate.gov/workflow/api/workflow/initiate-process
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentType": "directVoucher",
+        "documentId": "DSCA20220106",
+        "documentOrgCode": "SCA",
+        "documentSubTypeId": "purchase",
+        "documentSubType": "electronicInvoice",
+        "initiator": "HH47118"
+    }
+settings: {}
+order: 15000

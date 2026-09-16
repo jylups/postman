@@ -1,0 +1,11 @@
+$kind: http-request
+url: https://iocr.fedteclab.com/api/aws-ocr-extract/file/comprehend
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: /Users/jylups/Downloads/test2.jpg
+settings: {}
+order: 4000

@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/api/workflow/posting/manually/update-change-order-data/PSAA22200072"
+method: GET
+settings: {}
+order: 6000

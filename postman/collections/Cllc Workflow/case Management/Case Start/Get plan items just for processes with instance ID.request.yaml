@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-runtime/plan-item-instances?state=active&planItemDefinitionType=processtask&referenceId={{candidate_process_id}}"
+method: GET
+queryParams:
+  state: active
+  planItemDefinitionType: processtask
+  referenceId: "{{candidate_process_id}}"
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+
+       pm.test("Take the last task ID from the list",function(){
+           const responseJson = pm.response.json();
+           pm.expect(responseJson.data.length).to.greaterThan(0);
+           pm.environment.set('process_plan_item_id', responseJson.data[responseJson.data.length -1].id);
+           
+       });
+    language: text/javascript
+settings: {}
+order: 16000

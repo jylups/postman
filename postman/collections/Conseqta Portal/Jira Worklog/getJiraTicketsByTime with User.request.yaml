@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{worklogService}}/worklog/api/admin/tickets-time"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+     
+      
+       "status": "In Progress",
+       "worklogUser": "jcarvallo"
+      
+    }
+settings: {}
+order: 9000

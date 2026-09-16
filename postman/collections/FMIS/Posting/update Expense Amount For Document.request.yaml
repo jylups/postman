@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/api/workflow/posting/simulate/post-response"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "dataServiceEvent": "UPDATE_POSTED_STATUS",
+        "documentId": "DSAA19232710"
+    }
+settings: {}
+order: 3000

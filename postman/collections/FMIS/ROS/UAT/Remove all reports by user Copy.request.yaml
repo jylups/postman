@@ -1,0 +1,17 @@
+$kind: http-request
+url: https://uat.fmis.senate.gov/document/api/document/ros/remove-user/KZ84444
+method: GET
+body:
+  type: json
+  content: |-
+    {
+        "reportStyle": "full",
+        "requestedReportTypes": [
+            "MASTER"
+        ],
+        "reportCodes": ["LOE"],
+        "fundYears":["2020"]
+
+    }
+settings: {}
+order: 11000

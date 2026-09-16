@@ -1,0 +1,73 @@
+$kind: http-request
+url: "{{server_base}}/extended/cmmn-api/cmmn-runtime/tasks/{{task_id}}"
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "variables": [
+            {
+                "name": "email",
+                "value": "jc@cllc.io"
+            },
+            {
+                "name": "firstName",
+                "value": "George"
+            },
+            {
+                "name": "lastName",
+                "value": "Carvallo"
+            },
+            {
+                "name": "middleInitial",
+                "value": "A"
+            },
+            {
+                "name": "phone",
+                "value": "+17034517894"
+            },
+            {
+                "name": "sites",
+                "value": [
+                    {
+                        "site_date": null,
+                        "file": null,
+                        "textarea_nzqw0g": "",
+                        "site_address": "1730 1st st NW",
+                        "site_city": "Washington",
+                        "site_state": "DC"
+                    }
+                ]
+            },
+            {
+                "name": "sites_0_site_address",
+                "value": "1730 1st st NW"
+            },
+            {
+                "name": "sites_0_site_city",
+                "value": "Washington"
+            },
+            {
+                "name": "sites_0_site_state",
+                "value": "DC"
+            },
+            {
+                "name": "sites_0_textarea_nzqw0g",
+                "value": ""
+            }
+        ]
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+
+       pm.test("Take the last task ID from the list",function(){
+           const responseJson = pm.response.json();
+       });
+    language: text/javascript
+settings: {}
+order: 8000

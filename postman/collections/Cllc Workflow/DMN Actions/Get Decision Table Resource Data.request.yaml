@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{server_base}}/dmn-api/dmn-repository/decision-tables/{{dmn_definition_id}}/resourcedata"
+method: GET
+settings: {}
+order: 3000

@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{server_base}}/process-api/repository/process-definitions?latest=true"
+method: GET
+queryParams:
+  latest: "true"
+settings: {}
+order: 16000

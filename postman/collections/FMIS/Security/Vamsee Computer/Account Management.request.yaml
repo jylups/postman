@@ -1,0 +1,5 @@
+$kind: http-request
+url: 172.26.147.136:9081/api/fmis/um/v2/account/JC84415
+method: GET
+settings: {}
+order: 1000

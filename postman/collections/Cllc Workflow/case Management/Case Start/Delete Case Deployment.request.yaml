@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-repository/deployments/{{deploymentId}}?cascade=true"
+method: DELETE
+queryParams:
+  cascade: "true"
+settings: {}
+order: 1000

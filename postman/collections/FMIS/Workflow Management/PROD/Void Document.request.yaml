@@ -1,0 +1,12 @@
+$kind: http-request
+url: https://fmis.senate.gov/workflow/api/workflow/void
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "processInstanceId": "",
+        "taskId": ""
+    }
+settings: {}
+order: 13000

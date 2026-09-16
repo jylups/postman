@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{dataServiceUAT}}/api/fmis/etl/data/update/advanced-search-documents/document-list"
+method: POST
+body:
+  type: json
+  content: '["ESR202026482"]'
+settings: {}
+order: 8000

@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-runtime/plan-item-instances/{{task_plan_item}}"
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "action": "start"
+    }
+settings: {}
+order: 26000

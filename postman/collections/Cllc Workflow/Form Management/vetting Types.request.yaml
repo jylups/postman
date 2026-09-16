@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://case-management-ui.jylups.com/api/investigation-data-service/swagger-ui/index.html
+method: GET
+settings: {}
+order: 3000

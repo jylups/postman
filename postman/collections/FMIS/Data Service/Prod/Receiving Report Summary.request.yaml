@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://localhost:8087/api/fmis/document/data/v2/receiving-report/summary/PSAA22001730-01
+method: GET
+settings: {}
+order: 17000

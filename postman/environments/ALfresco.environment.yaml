@@ -1,0 +1,15 @@
+name: ALfresco
+color: null
+values:
+  - key: caseNumber
+    value: "12345"
+    enabled: true
+    description:
+      content: ""
+      type: text/plain
+  - key: testFileContentID
+    value: 71c6c2b7-8a96-4578-9c02-379f606502bc
+    enabled: true
+    description:
+      content: ""
+      type: text/plain

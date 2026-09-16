@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{documentServiceURL}}/api/document/ros/fetch/dropdown-values"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "organizations": null,
+        "appropriations": null,
+        "fundingPeriods": null
+    }
+settings: {}
+order: 5000

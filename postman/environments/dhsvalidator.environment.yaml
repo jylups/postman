@@ -1,0 +1,78 @@
+name: dhsvalidator
+color: null
+values:
+  - key: backnedapi
+    value: http://localhost:8080
+    enabled: true
+  - key: question_id
+    value: ""
+    enabled: true
+  - key: administration-service
+    value: http://otp-authenticator-administrator-service
+    enabled: true
+  - key: case_definition_key
+    value: ""
+    enabled: true
+  - key: case_diagram_location
+    value: ""
+    enabled: true
+  - key: realm
+    value: cllc-development
+    enabled: true
+  - key: user-id
+    value: 0d6a6e48-6afe-4e45-ba9d-7b9fb2f045ce
+    enabled: true
+  - key: task_id
+    value: ""
+    enabled: true
+  - key: user_task_id
+    value: ""
+    enabled: true
+  - key: candidate_process_id
+    value: ""
+    enabled: true
+  - key: processDefinitionId
+    value: ""
+    enabled: true
+  - key: user_management_service
+    value: http://localhost:8080/api/user-management
+    enabled: true
+  - key: case_instance_id
+    value: ""
+    enabled: true
+  - key: process_plan_item_id
+    value: ""
+    enabled: true
+  - key: case_inbox_server
+    value: " http://localhost:8084/case-inbox-rest"
+    enabled: true
+  - key: dmn_definition_id
+    value: ""
+    enabled: true
+  - key: task_plan_item
+    value: ""
+    enabled: true
+  - key: team_subject
+    value: ""
+    enabled: true
+  - key: post_id
+    value: ""
+    enabled: true
+  - key: reply_id
+    value: ""
+    enabled: true
+  - key: case_definition_id
+    value: ""
+    enabled: true
+  - key: process_definition_id
+    value: ""
+    enabled: true
+  - key: forms_server
+    value: https://case-management-ui.jylups.com/api/case-form-manager
+    enabled: true
+  - key: openweb_server
+    value: ""
+    enabled: true
+  - key: active_plan_createTime
+    value: ""
+    enabled: true

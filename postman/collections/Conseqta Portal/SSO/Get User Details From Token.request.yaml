@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{api-url}}/oidc-client-library/api/user/validateToken"
+method: POST
+body:
+  type: json
+  content: "{{access_token}}"
+settings: {}
+order: 3000

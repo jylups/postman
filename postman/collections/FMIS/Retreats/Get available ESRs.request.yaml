@@ -1,0 +1,27 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/data/v2/retreats/get-attendee-available-esrs/"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "employeeId": "VN00024778",
+        "travelStartDate": "12/03/2020",
+        "travelEndDate": "12/06/2020",
+        "retreatsTravelDocs": {
+            "startDate": null,
+            "endDate": null,
+            "expenseDoc": {
+                "id": null,
+                "amount": null
+            },
+            "voucher": {
+                "id": null,
+                "amount": null
+            },
+            "status": "ESR Pending",
+            "link": null
+        }
+    }
+settings: {}
+order: 2000

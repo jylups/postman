@@ -1,0 +1,55 @@
+$kind: http-request
+url: "{{server_base}}/extended/runtime/tasks/{{task_id}}"
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+      "action": "save",
+      "variables": [
+        {
+          "name": "email",
+          "value": "jc@cllc.io"
+        },
+        {
+          "name": "firstName",
+          "value": "Jorge"
+        },
+        {
+          "name": "lastName",
+          "value": "Carvallo"
+        },
+        {
+          "name": "middleInitial",
+          "value": "A"
+        },
+        {
+          "name": "phone",
+          "value": "17034571234"
+        },
+        {
+          "name": "sites",
+          "value": [
+            {
+              "site_date": null,
+              "file": null,
+              "textarea_nzqw0g": "",
+              "site_address": "1730 1st st NW",
+              "site_city": "Washington",
+              "site_state": "DC"
+            }
+          ],
+          "type": "json"
+        }
+      ]
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+    language: text/javascript
+settings: {}
+order: 12000

@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{keycloakServer}}/admin/realms/{{realm}}/users/count"
+method: GET
+settings: {}
+order: 1000

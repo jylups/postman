@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://uat.fmis.senate.gov/modern/api/fmis/etl/data/traveltext/import-mongo-voucheritnerary/DPAD20210273
+method: GET
+settings: {}
+order: 7000

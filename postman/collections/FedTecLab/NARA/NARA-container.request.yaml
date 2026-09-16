@@ -1,0 +1,11 @@
+$kind: http-request
+url: https://image-data.uat.fedteclab.com/check
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: /Users/jylups/Downloads/sam_1.tiff
+settings: {}
+order: 2000

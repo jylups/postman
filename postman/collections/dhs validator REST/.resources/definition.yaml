@@ -1,0 +1,17 @@
+$kind: collection
+variables:
+  server_base: http://localhost:8083/workflow-service
+  user_id: jc@cllc.io
+auth:
+  - id: 1fc9bda2-0e73-49f7-9779-f9a89e8f3ae3
+    type: oauth2
+    name: oauth2 auth
+    credentials:
+      clientId: dhs-administration
+      accessTokenUrl: https://sso.jylups.com/realms/ice-realm/protocol/openid-connect/token
+      authUrl: https://sso.jylups.com/realms/ice-realm/protocol/openid-connect/auth
+      tokenName: jylupsToken
+      addTokenTo: header
+      clientSecret: bXsV3c46nXDarfV2vU9WE1LwRfaSOEdi
+      scope: openid profile email
+      redirect_uri: https://oauth.pstmn.io/v1/callback

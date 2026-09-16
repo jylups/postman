@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-history/historic-planitem-instances?caseInstanceId={{case_instance_id}}&start=0&size=10&planItemDefinitionType=humantask&order=desc&sort=endedTime"
+method: GET
+queryParams:
+  - key: caseInstanceId
+    value: "{{case_instance_id}}"
+  - key: start
+    value: "0"
+  - key: size
+    value: "10"
+  - key: planItemDefinitionType
+    value: humantask
+  - key: state
+    value: completed
+    disabled: true
+  - key: order
+    value: desc
+  - key: sort
+    value: endedTime
+  - key: completedAfter
+    value: 2020-11-01T01:13:56.617Z
+    disabled: true
+settings: {}
+order: 21000

@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{worklogServiceDev}}/worklog/api/query/worklogentry/add/{{sampleJiraId}}"
+method: POST
+body:
+  type: json
+  content: |-
+    [
+        {
+            "displayName": "Duncan Pregnall",
+            "user": "dspregnall",
+            "creationDate": "2020-4-2 16:32",
+            "minutesSpent": 80,
+            "category": "counseling"
+        }
+    ]
+settings: {}
+order: 8000

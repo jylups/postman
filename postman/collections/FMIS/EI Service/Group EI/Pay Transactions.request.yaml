@@ -1,0 +1,144 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/document/data/v2/create/direct-voucher-from-group-ei/"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "electronicInvoices": [
+            {
+                "electronicInvoice": {
+                    "transKey": 566,
+                    "transactionKey": "24164079037937311138370",
+                    "billingAccountType": 2,
+                    "cardNumber": "1007",
+                    "supplierName": "SENATE CHEF   11202561",
+                    "billingAmount": 6.9,
+                    "remainingLineAmount": 0,
+                    "merchantCategoryCd": 5814,
+                    "groupElectronicInvoices": null,
+                    "groupElectronicInvoicesName": null,
+                    "groupElectronicInvoicesKey": null,
+                    "postingDate": "02/07/2019",
+                    "transactionDate": "02/05/2019",
+                    "archivedFlag": true,
+                    "descriptionSummary": "SENATE CHEF   11202561",
+                    "descriptionDetail": "",
+                    "lineComment": null,
+                    "passengerItinerary": null,
+                    "carRentalSummary": null,
+                    "legSpecificInfos": null,
+                    "credit": false
+                },
+                "groupElectronicInvoices": null,
+                "amount": 6.9,
+                "remain": 0,
+                "description": "SENATE CHEF   11202561",
+                "page": 0,
+                "group": false,
+                "visibility": false,
+                "expanded": false,
+                "selected": true,
+                "expandModal": false
+            }
+        ],
+        "groupElectronicInvoices": [
+            {
+                "electronicInvoice": null,
+                "groupElectronicInvoices": {
+                    "groupTransactionsKey": 515,
+                    "groupTransactionsName": "Untitled Group",
+                    "electronicInvoicesList": [
+                        562,
+                        279
+                    ],
+                    "electronicInvoiceDetails": null,
+                    "groupAmount": 6.4,
+                    "remainingBalance": 6.4,
+                    "minTransactionDateString": "02-04-2019",
+                    "maxTransactionDateString": "02-05-2019",
+                    "minTransactionDate": null,
+                    "maxTransactionDate": null,
+                    "minPostingDateString": "02-06-2019",
+                    "maxPostingDateString": "02-07-2019",
+                    "billingAccountTypeCode": null,
+                    "billingAccountType": null,
+                    "officeCode": null,
+                    "description": null,
+                    "descriptionSummary": null,
+                    "descriptionDetail": null,
+                    "lineComment": null,
+                    "passengerItinerary": null,
+                    "carRentalSummary": null,
+                    "legSpecificInfos": null,
+                    "credit": false
+                },
+                "amount": 6.4,
+                "remain": 6.4,
+                "description": "Untitled Group                                    ",
+                "page": 0,
+                "group": true,
+                "visibility": false,
+                "expanded": false,
+                "selected": true,
+                "expandModal": false
+            }
+        ],
+        "fundingInfo": {
+            "beginAppnYear": "2018-10-01",
+            "endAppnYear": "2023-09-30",
+            "fund1": "1923",
+            "fund1Title": "FISCAL YEARS 2019-2023           ",
+            "fundGroup": null,
+            "fundingYearKey": null,
+            "fundingYearTitleKey": 142,
+            "officeFundingCode": null,
+            "fundYearTypeCd": "M",
+            "apportionmentCd": null
+        },
+        "vendorInfo": {
+            "vendorNo": "VN00004983",
+            "vendorSuffix": "06",
+            "address1": "PO BOX 78025                            ",
+            "address2": "                                        ",
+            "address3": "                                        ",
+            "addressCity": "PHOENIX                  ",
+            "addressState": "AZ",
+            "addressStreet": "                                        ",
+            "addressZip": "850628025 ",
+            "alternateName": "CITIBANK - TRAVEL CBA CARD                        ",
+            "contactName": "                                        ",
+            "contactPhoneNo": "                    ",
+            "countryCode": "USA",
+            "countyCode": "   ",
+            "emailAddress": "                                                                 ",
+            "faxNumberNo": "                    ",
+            "disbType": "C",
+            "vendorCrosswalk": null,
+            "voucherTerms": "NET       ",
+            "vendorCategory": "ADPC",
+            "daysTillDue": "   ",
+            "effEndDate": "20990101",
+            "pSVendorId": null,
+            "pSVendorLoc": null,
+            "pSAddressSeqNum": null,
+            "countAddress": null,
+            "samIndicator": null,
+            "samStatusCode": null
+        },
+        "officeCode": {
+            "officeCd": "SAASOFPAGPAG    ",
+            "officeFundingCd": "SAASOF",
+            "groupKey": "10",
+            "endDt": null,
+            "officeAbbr": "SAA",
+            "officeTitleTxt": "PAGES                                   ",
+            "startDt": "2017-08-06",
+            "stateAbbr": null,
+            "requestTaFlag": "N"
+        },
+        "startDate": "06/21/2021",
+        "endDate": "06/22/2021"
+    }
+settings: {}
+order: 9000

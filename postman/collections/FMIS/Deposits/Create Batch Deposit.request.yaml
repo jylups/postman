@@ -1,0 +1,39 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/data/deposit/batch/save"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "batchDepositKey": null,
+      "batchDepositNbr": null,
+      "documentId": null,
+      "batchType": 1,
+      "bagNbr": "123456789",
+      "totalAmount": null,
+      "officeCd": "SAACPDOODOOD",
+      "accountNumber": null,
+      "relatedDocs": [
+        {
+          "documentId": "{{preparedDocumentId}}",
+          "officeCd": null,
+          "depositType": null,
+          "accountNumber": null,
+          "totalAmount": null,
+          "depositKey": {{preparedDepositId}}
+        }
+      ],
+      "batchDate": "10/02/2019",
+      "startDate": "10/02/2019",
+      "endDate": "10/02/2019"
+    }
+scripts:
+  - type: afterResponse
+    code: |+
+      var data = JSON.parse(responseBody);
+
+    language: text/javascript
+settings: {}
+order: 6000

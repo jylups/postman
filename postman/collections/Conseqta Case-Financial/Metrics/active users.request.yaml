@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://localhost:9084/api/fmis/metrics/users/active
+method: GET
+settings: {}
+order: 1000

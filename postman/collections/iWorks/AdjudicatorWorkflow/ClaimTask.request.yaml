@@ -1,0 +1,43 @@
+$kind: http-request
+url: "{{server_base}}/process-api/runtime/tasks/{{task_id}}"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "action": "claim",
+        "assignee": "{{user_id}}",
+           "variables": [
+        {
+          "name": "initiator",
+          "value": "{{user_id}}"
+        },
+        {
+            "name": "firstName",
+            "value": "Giorgio"
+        },
+        {
+            "name": "lastName",
+            "value": "Carvallo"
+        },
+        {
+            "name": "programCode",
+            "value": "vista"
+        },
+        {
+            "name": "middleInitial",
+            "value": "A"
+        },
+        {
+            "name": "email",
+            "value": "jc@cllc.io"
+        },
+        {
+            "name": "phone",
+            "value": "1234567890"
+        }
+      ]
+        
+    }
+settings: {}
+order: 9000

@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{ImagingService}}/imaging/api/test/heroes"
+method: GET
+auth:
+  type: noauth
+settings: {}
+order: 9000

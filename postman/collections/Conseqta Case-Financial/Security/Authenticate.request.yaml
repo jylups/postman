@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://localhost:8083/financial-uaas-client/uaas/authenticate
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "username": "{{userNmae}}",
+        "password": "{{password}}!",
+        "applicationId": "FMIS",
+        "rememberMe": true
+    }
+settings: {}
+order: 2000

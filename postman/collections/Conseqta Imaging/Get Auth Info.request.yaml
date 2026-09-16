@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{ImagingService}}/imaging/api/user/userInfo"
+method: GET
+settings: {}
+order: 5000

@@ -1,0 +1,138 @@
+$kind: http-request
+url: "{{server_base}}/process-api/runtime/process-instances"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "processDefinitionKey": "requestSupplementalInformation",
+        "variables": [
+                {
+                "name": "customerInfo",
+                "type": "json",
+                "value": {
+                    "name": "Alice Wonderland",
+                    "email": "alice@example.com",
+                    "address": {
+                    "street": "123 Rabbit Hole",
+                    "city": "Wonderland",
+                    "zip": "12345"
+                    }
+                }
+            },
+            {
+            "name": "otherCitizenships",
+            "type": "boolean",
+            "value": false,
+            "scope": null    
+            },
+        {
+            "name": "lastName",
+            "type": "string",
+            "value": "Doe",
+            "scope": null
+        },
+        {
+            "name": "birthdate",
+            "type": "string",
+            "value": "1980-12-12",
+            "scope": null
+        },
+        {
+            "name": "city",
+            "type": "string",
+            "value": "Washington",
+            "scope": null
+        },
+        {
+            "name": "address1",
+            "type": "string",
+            "value": "1201 Massachusetts Av NW",
+            "scope": null
+        },
+        {
+            "name": "postalCode",
+            "type": "string",
+            "value": "20005",
+            "scope": null
+        },
+        {
+            "name": "initiator",
+            "type": "string",
+            "value": "0d6a6e48-6afe-4e45-ba9d-7b9fb2f045ce",
+            "scope": null
+        },
+        {
+            "name": "citizenship",
+            "type": "string",
+            "value": "US",
+            "scope": null
+        },
+        {
+            "name": "formVersion",
+            "type": "string",
+            "value": "1.0",
+            "scope": null
+        },
+        {
+            "name": "firstName",
+            "type": "string",
+            "value": "John",
+            "scope": null
+        },
+        {
+            "name": "middleInitial",
+            "type": "string",
+            "value": "A",
+            "scope": null
+        },
+        {
+            "name": "customDatabaseId",
+            "value": null,
+            "scope": null
+        },
+        {
+            "name": "phone",
+            "type": "string",
+            "value": "7031234567",
+            "scope": null
+        },
+        {
+            "name": "state",
+            "type": "string",
+            "value": "DC",
+            "scope": null
+        },
+        {
+            "name": "applicantId",
+            "type": "string",
+            "value": "0d6a6e48-6afe-4e45-ba9d-7b9fb2f045ce",
+            "scope": null
+        },
+        {
+            "name": "email",
+            "type": "string",
+            "value": "joh.doe@gmail.com",
+            "scope": null
+        }
+    ]
+    }
+scripts:
+  - type: afterResponse
+    code: |+
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+
+      pm.test("Process data exepected",function(){
+          const responseJson = pm.response.json();
+          pm.expect(responseJson.id).to.be.a('string');
+          pm.environment.set('candidate_process_id', responseJson.id);
+          pm.environment.set('processDefinitionId',responseJson.processDefinitionId);
+      });
+
+
+    language: text/javascript
+settings: {}
+order: 1000

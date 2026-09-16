@@ -1,0 +1,9 @@
+$kind: http-request
+url: https://harbor.conseqta.io/v2/conseqta-registry/conseqta-tap/manifests/8b0e05a7
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+settings: {}
+order: 3000

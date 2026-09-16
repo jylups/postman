@@ -1,0 +1,732 @@
+$kind: http-request
+url: https://signing-service-fmis-dev.os1.senate.gov/api/signing/direct-voucher/sign
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "taskId": "e628b3db-f18a-11eb-baa7-0a580a810c71",
+        "processInstanceId": "e6281788-f18a-11eb-baa7-0a580a810c71",
+        "taskName": "Direct Voucher Create",
+        "userAuthoritiesForTask": [
+            {
+                "authorityName": "ACKNOWLEDGE_ESR",
+                "description": "User who can Acknowledge ESR",
+                "shortName": "ESR_Acknowledge",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Acknowledge Esr"
+            },
+            {
+                "authorityName": "ADDITIONAL_INVOICE_APPROVER",
+                "description": null,
+                "shortName": "Add_INV_Appr",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Additional Invoice Approver"
+            },
+            {
+                "authorityName": "BUDGET_ADMINISTRATOR",
+                "description": null,
+                "shortName": "BUDGET_ADMINISTRATOR",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Budget Administrator"
+            },
+            {
+                "authorityName": "BUDGET_VIEWER",
+                "description": null,
+                "shortName": "BUDGET_VIEWER",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Budget Viewer"
+            },
+            {
+                "authorityName": "CONTRACT_VOUCHER_APPROVAL",
+                "description": null,
+                "shortName": "Contract_VO_Appr",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Contract Voucher Approval"
+            },
+            {
+                "authorityName": "DEPOSIT_CREATOR",
+                "description": "Users who can initiate and create deposits",
+                "shortName": "Deposit_Creator",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Deposit Creator"
+            },
+            {
+                "authorityName": "DEPOSIT_REVIEWER",
+                "description": "DO NOT USE - TO BE DELETED",
+                "shortName": "Deposit_Reviewer",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Deposit Reviewer"
+            },
+            {
+                "authorityName": "DEPT_PROCUREMENT_MANAGER",
+                "description": "Users Can manage procurement in their department",
+                "shortName": "Dept_Procurement_Manager",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Dept Procurement Manager"
+            },
+            {
+                "authorityName": "DIRECT_VOUCHER_CREATOR",
+                "description": null,
+                "shortName": "DVO_Creator",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Direct Voucher Creator"
+            },
+            {
+                "authorityName": "EAR_CREATOR",
+                "description": "USER CAN REQUEST FOR EXPENSE AUTHORIZATION",
+                "shortName": "EAR_CREATOR",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Ear Creator"
+            },
+            {
+                "authorityName": "EAR_REVIEWER",
+                "description": "USER CAN REVIEW EXPENSE AUTHORIZATION",
+                "shortName": "EAR_REVIEWER",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Ear Reviewer"
+            },
+            {
+                "authorityName": "EI_MANAGER",
+                "description": "USER CAN MANAGER ORGANIZATION EI",
+                "shortName": "EI_Manager",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Ei Manager"
+            },
+            {
+                "authorityName": "ESR_CREATE_AUTHORITY",
+                "description": "Users who can submit ESR for other employees in same dept",
+                "shortName": "ESR_CREATE_AUTHORITY",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Esr Create Authority"
+            },
+            {
+                "authorityName": "ESR_CREATOR",
+                "description": "Users who can submit ESR",
+                "shortName": "ESR_CREATOR",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Esr Creator"
+            },
+            {
+                "authorityName": "ESR_DIRECT_VOUCHER_CREATOR",
+                "description": "Users can create direct vouchers for esrs",
+                "shortName": "ESR_DIRECT_VOUCHER_CREATOR",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Esr Direct Voucher Creator"
+            },
+            {
+                "authorityName": "ESR_REVIEWER",
+                "description": "Users can review ESR",
+                "shortName": "ESR_REVIEWER",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Esr Reviewer"
+            },
+            {
+                "authorityName": "INVOICE_APPROVER",
+                "description": null,
+                "shortName": "Inv_Approver",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Invoice Approver"
+            },
+            {
+                "authorityName": "OFFICE_DOCUMENT_MANAGER",
+                "description": "USER CAN MANAGER ORGANIZATION DOCUMENTS",
+                "shortName": "OFFICE_DOCUMENT_MANAGER",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Office Document Manager"
+            },
+            {
+                "authorityName": "ORG_ADMIN",
+                "description": null,
+                "shortName": "Org_Admin",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Org Admin"
+            },
+            {
+                "authorityName": "PAYROLL_REPORT_VIEWER",
+                "description": "User can view Payroll reports for am organization",
+                "shortName": "PAYROLL_REPORT_VIEWER",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Payroll Report Viewer"
+            },
+            {
+                "authorityName": "RECEIVING_REPORT_CREATOR",
+                "description": null,
+                "shortName": "RR_Creator",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Receiving Report Creator"
+            },
+            {
+                "authorityName": "REPORTS_ADMINISTRATOR",
+                "description": null,
+                "shortName": "REPORTS_ADMINISTRATOR",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Reports Administrator"
+            },
+            {
+                "authorityName": "REPORTS_VIEWER",
+                "description": null,
+                "shortName": "REPORTS_VIEWER",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Reports Viewer"
+            },
+            {
+                "authorityName": "REQUISITION_CREATOR",
+                "description": "Users Can create Requisitions with this authority",
+                "shortName": "Req_Creator",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Requisition Creator"
+            },
+            {
+                "authorityName": "REQUISITION_REVIEWER",
+                "description": null,
+                "shortName": "Req_Reviewer",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Requisition Reviewer"
+            },
+            {
+                "authorityName": "RETREATS_CREATOR",
+                "description": "Users who can Create Retreats",
+                "shortName": "RETREATS_CREATOR",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Retreats Creator"
+            },
+            {
+                "authorityName": "SENATE_OFFICE_INVOICE_APPROVAL",
+                "description": null,
+                "shortName": "Sen_Off_INV_Appr",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Senate Office Invoice Approval"
+            },
+            {
+                "authorityName": "TRAVEL_ADVANCE_CREATOR",
+                "description": null,
+                "shortName": "TRAVEL_ADVANCE_CREATOR",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Travel Advance Creator"
+            },
+            {
+                "authorityName": "TRAVEL_ADVANCE_REVIEWER",
+                "description": null,
+                "shortName": "TRAVEL_ADVANCE_REVIEWER",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Travel Advance Reviewer"
+            },
+            {
+                "authorityName": "VENDOR_REQUEST_CREATOR",
+                "description": "User can add a new Vendor Request for an organization",
+                "shortName": "VENDOR_REQUEST_CREATOR",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Vendor Request Creator"
+            },
+            {
+                "authorityName": "VOUCHER_APPROVER",
+                "description": null,
+                "shortName": "VO_Appr",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Voucher Approver"
+            },
+            {
+                "authorityName": "VOUCHER_CERTIFIER",
+                "description": null,
+                "shortName": "VO_Certifier",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Voucher Certifier"
+            },
+            {
+                "authorityName": "VOUCHER_CREATOR",
+                "description": null,
+                "shortName": "VO_Creator",
+                "privilegedAccessFlag": false,
+                "privilegedAccessGroup": "DEPT",
+                "formattedName": "Voucher Creator"
+            }
+        ],
+        "signWithCerts": true,
+        "directVoucher": {
+            "documentKey": 52433,
+            "startDate": "02/13/2019",
+            "endDate": "02/15/2019",
+            "directVoucherDocNo": "DMKY20190004",
+            "esrNbr": null,
+            "expenseDetails": [
+                {
+                    "documentDetailKey": 384102,
+                    "documentKey": 52433,
+                    "transactionKey": "24431069045978001422201",
+                    "esrExpenseKey": null,
+                    "expenseTypeKey": null,
+                    "detailLineNo": 1,
+                    "indexCodeInfo": {
+                        "indexCode": "MMKYDXMKYE",
+                        "fundYear": "2019",
+                        "indexCodeTitle": "MARKEY - BOSTON                         ",
+                        "fund1Title": "FISCAL YEAR 2019                        ",
+                        "fund2Title": "MEMBERS                                 ",
+                        "fund3Title": "SENATORS OFFICIAL PERS & OFF EXP ACCT   ",
+                        "functionTitle": "APPROPRIATION SYMBOL 0090130            ",
+                        "organizationTitle": "MARKEY - DC                             ",
+                        "projectTitle": "null",
+                        "grantTitle": "null",
+                        "programTitle": "MARKEY 2015 - BOSTON, MA                ",
+                        "fundYearTitleKey": 161
+                    },
+                    "shortCodeQuery": "MARKEY - BOSTON - MMKYDXMKYE",
+                    "expenseCode": {
+                        "objectCode": "212101",
+                        "objectTitle": "STAFF TRANS-CHARTER AIR                                                                                                                                                                                 "
+                    },
+                    "expenseCodeQuery": "STAFF TRANS-CHARTER AIR - 212101",
+                    "subtotal": 1,
+                    "remainingLineAmount": 70.3,
+                    "description": "American Airlines\nPassenger: MARKEY/EDWARD | Ticket Number: 0012336960717\n\nItinerary:\n\nLeg number: 1\nOrigin Code: BOS | Destination Code: DCA\nTravel Date: 02/22/2019\nService Class: G\n\nWed, Feb 13, 2019",
+                    "lineComment": "asdf",
+                    "createDate": "2021-07-30T23:07:22.021+0000",
+                    "updateDate": "2021-07-30T23:33:58.398+0000",
+                    "startDate": null,
+                    "endDate": null,
+                    "fundYearKey": 161,
+                    "crossFundYearKey": null,
+                    "objectCodeArray": [],
+                    "visibility": false,
+                    "expandDetails": true,
+                    "itinerary": {
+                        "documentDetailKey": 384102,
+                        "detailLineNo": 1,
+                        "subLineDetailNo": null,
+                        "officeCd": "MKY",
+                        "expenseCodeQuery": null,
+                        "shortCodeQuery": null,
+                        "activeTripType": "round-trip",
+                        "travelerList": [
+                            {
+                                "memberUserId": null,
+                                "memberDisplayName": "MALATESTA,NICHOLAS M                              ",
+                                "memberVendorId": "E000226666",
+                                "memberVendorSuffix": "01",
+                                "address1": "250 K ST. NE                            ",
+                                "address2": "APT. 306                                ",
+                                "addressCity": "WASHINGTON               ",
+                                "addressState": "DC",
+                                "addressZip": "20002     ",
+                                "addressCountry": "USA",
+                                "disbType": "P",
+                                "vendorCategory": "EMPY",
+                                "dutyStation": "WASHINGTON,DC       ",
+                                "multipleUsersIds": null
+                            }
+                        ],
+                        "trips": [
+                            {
+                                "tripKey": null,
+                                "travelBeginingDt": "07/30/2021",
+                                "travelEndDt": "07/30/2021",
+                                "tripNumber": null,
+                                "officialItineraryTxt": null,
+                                "perDiemDaysNbr": null,
+                                "descName": null,
+                                "startLocInd": null,
+                                "endLocInd": null,
+                                "startCityStateKey": null,
+                                "endCityStateKey": null,
+                                "dsCityStateKey": null,
+                                "tripType": "round-trip",
+                                "gsaToggle": null,
+                                "tripTravelText": null,
+                                "expenses": null,
+                                "tripLegs": [
+                                    {
+                                        "legKey": null,
+                                        "originCityStateId": "V21178",
+                                        "destinationCityStateId": "Y11293",
+                                        "startDate": "07/30/2021",
+                                        "endDate": "07/30/2021",
+                                        "officialIndicator": null,
+                                        "originDutyStationIndicator": true,
+                                        "originResidenceIndicator": null,
+                                        "originOtherIndicator": null,
+                                        "destinationDutyStationIndicator": null,
+                                        "destinationResidenceIndicator": null,
+                                        "destinationOtherIndicator": null,
+                                        "legNumber": 1,
+                                        "residenceCloserThanDutyStation": null,
+                                        "residenceTravelOutsideWorkHours": null,
+                                        "legActivityDesc": null,
+                                        "returnToOfficeEnteringDutyStation": null,
+                                        "originCityStateQuery": "WASHINGTON,DC",
+                                        "destinationCityStateQuery": null,
+                                        "originIndicator": "dutyStation"
+                                    },
+                                    {
+                                        "legKey": null,
+                                        "originCityStateId": "Y11293",
+                                        "destinationCityStateId": "V21178",
+                                        "startDate": "07/30/2021",
+                                        "endDate": "07/30/2021",
+                                        "officialIndicator": null,
+                                        "originDutyStationIndicator": null,
+                                        "originResidenceIndicator": null,
+                                        "originOtherIndicator": null,
+                                        "destinationDutyStationIndicator": true,
+                                        "destinationResidenceIndicator": null,
+                                        "destinationOtherIndicator": null,
+                                        "legNumber": 2,
+                                        "residenceCloserThanDutyStation": null,
+                                        "residenceTravelOutsideWorkHours": null,
+                                        "legActivityDesc": null,
+                                        "returnToOfficeEnteringDutyStation": false,
+                                        "originCityStateQuery": "WILMER,AL",
+                                        "destinationCityStateQuery": null
+                                    },
+                                    {
+                                        "legKey": null,
+                                        "originCityStateId": "V21178",
+                                        "destinationCityStateId": "V21178",
+                                        "startDate": "07/30/2021",
+                                        "endDate": "07/30/2021",
+                                        "officialIndicator": null,
+                                        "originDutyStationIndicator": true,
+                                        "originResidenceIndicator": null,
+                                        "originOtherIndicator": null,
+                                        "destinationDutyStationIndicator": true,
+                                        "destinationResidenceIndicator": null,
+                                        "destinationOtherIndicator": null,
+                                        "legNumber": 3,
+                                        "residenceCloserThanDutyStation": null,
+                                        "residenceTravelOutsideWorkHours": null,
+                                        "legActivityDesc": null,
+                                        "returnToOfficeEnteringDutyStation": null,
+                                        "originCityStateQuery": "WASHINGTON,DC",
+                                        "destinationCityStateQuery": null,
+                                        "originIndicator": "dutyStation"
+                                    }
+                                ]
+                            }
+                        ],
+                        "travelerInfo": {
+                            "dutyStationInfo": {
+                                "cityStateId": "V21178",
+                                "dcMetroInd": "Y",
+                                "doUspsInd": "U",
+                                "prefCityName": "WASHINGTON",
+                                "stateAbbrev": "DC",
+                                "zipCodeCd": null
+                            },
+                            "residenceInfo": {
+                                "cityStateId": "V21178",
+                                "dcMetroInd": "Y",
+                                "doUspsInd": "U",
+                                "prefCityName": "WASHINGTON",
+                                "stateAbbrev": "DC",
+                                "zipCodeCd": null
+                            },
+                            "vendorDutyStation": null
+                        },
+                        "expenseCategoryDescription": null,
+                        "documentId": "DMKY20190004",
+                        "memberVendorInfo": {
+                            "memberUserId": null,
+                            "memberDisplayName": "MALATESTA,NICHOLAS M                              ",
+                            "memberVendorId": "E000226666",
+                            "memberVendorSuffix": "01",
+                            "address1": "250 K ST. NE                            ",
+                            "address2": "APT. 306                                ",
+                            "addressCity": "WASHINGTON               ",
+                            "addressState": "DC",
+                            "addressZip": "20002     ",
+                            "addressCountry": "USA",
+                            "disbType": "P",
+                            "vendorCategory": "EMPY",
+                            "dutyStation": "WASHINGTON,DC       ",
+                            "multipleUsersIds": null
+                        },
+                        "travelerListString": "MALATESTA,NICHOLAS M; ",
+                        "showItinerary": false,
+                        "index": 1,
+                        "expenseTitle": "Expense 1"
+                    }
+                }
+            ],
+            "groupExpenseDetails": [],
+            "officeCode": {
+                "officeCd": "MKY             ",
+                "officeFundingCd": "MKY   ",
+                "groupKey": "9",
+                "endDt": null,
+                "officeAbbr": "MKY",
+                "officeTitleTxt": "SENATOR EDWARD MARKEY                   ",
+                "startDt": "2013-07-08",
+                "stateAbbr": "MA",
+                "requestTaFlag": "N"
+            },
+            "invoiceInfo": {
+                "invoiceInfoKey": 59952,
+                "documentDetailKey": null,
+                "documentId": "DMKY20190004        ",
+                "invoiceDate": "02/15/2019",
+                "accountNbr": "4486270069426488",
+                "invoiceNbr": "EIMKY2021073001745                   ",
+                "vendorInvoiceNbr": null,
+                "invoiceReceiptDate": "03/02/2019",
+                "totalInvoiceAmt": null,
+                "invoiceLineNumber": null,
+                "documentKey": 52433
+            },
+            "fundingInfo": {
+                "beginAppnYear": "2018-10-01",
+                "endAppnYear": "2019-09-30",
+                "fund1": "2019",
+                "fund1Title": "FISCAL YEAR 2019                        ",
+                "fundGroup": null,
+                "fundingYearKey": null,
+                "fundingYearTitleKey": 161,
+                "officeFundingCode": null,
+                "fundYearTypeCd": "S",
+                "apportionmentCd": null
+            },
+            "fundingInfo2": null,
+            "vendorInfo": {
+                "vendorNo": "VN00004983",
+                "vendorSuffix": "06",
+                "address1": "PO BOX 78025                            ",
+                "address2": "                                        ",
+                "address3": "                                        ",
+                "addressCity": "PHOENIX                  ",
+                "addressState": "AZ",
+                "addressStreet": "                                        ",
+                "addressZip": "850628025 ",
+                "alternateName": "CITIBANK - TRAVEL CBA CARD                        ",
+                "contactName": "                                        ",
+                "contactPhoneNo": "                    ",
+                "countryCode": "USA",
+                "countyCode": "   ",
+                "emailAddress": "                                                                 ",
+                "faxNumberNo": "                    ",
+                "disbType": "C",
+                "vendorCrosswalk": null,
+                "voucherTerms": "NET       ",
+                "vendorCategory": "ADPC",
+                "daysTillDue": "   ",
+                "effEndDate": "20990101",
+                "pSVendorId": null,
+                "pSVendorLoc": null,
+                "pSAddressSeqNum": null,
+                "countAddress": null,
+                "samIndicator": null,
+                "samStatusCode": null
+            },
+            "totalAmount": 1,
+            "documentCreator": "JC84415",
+            "createdOn": "07/30/2021",
+            "lastUpdatedBy": "JC84415",
+            "lastUpdatedOn": "07/30/2021",
+            "notes": null,
+            "itineraryText": null,
+            "manuallyInitiated": false,
+            "saveFromReviewTask": false,
+            "travelAdvance": null,
+            "interfaceTypeCd": "WV",
+            "docTypeCd": "VO",
+            "errorMessage": null,
+            "orgCode": null,
+            "crossFundYearInd": false,
+            "autoGenerated": false,
+            "fmisDirectVoucherDetail": null,
+            "additionalExpenseList": null,
+            "voucherItinerary": {
+                "id": "61048653514ee20001e08a6b",
+                "documentId": "DMKY20190004",
+                "itineraryList": [
+                    {
+                        "documentDetailKey": 384102,
+                        "detailLineNo": 1,
+                        "subLineDetailNo": null,
+                        "officeCd": "MKY",
+                        "expenseCodeQuery": null,
+                        "shortCodeQuery": null,
+                        "activeTripType": "round-trip",
+                        "travelerList": [
+                            {
+                                "memberUserId": null,
+                                "memberDisplayName": "MALATESTA,NICHOLAS M                              ",
+                                "memberVendorId": "E000226666",
+                                "memberVendorSuffix": "01",
+                                "address1": "250 K ST. NE                            ",
+                                "address2": "APT. 306                                ",
+                                "addressCity": "WASHINGTON               ",
+                                "addressState": "DC",
+                                "addressZip": "20002     ",
+                                "addressCountry": "USA",
+                                "disbType": "P",
+                                "vendorCategory": "EMPY",
+                                "dutyStation": "WASHINGTON,DC       ",
+                                "multipleUsersIds": null
+                            }
+                        ],
+                        "trips": [
+                            {
+                                "tripKey": null,
+                                "travelBeginingDt": "07/30/2021",
+                                "travelEndDt": "07/30/2021",
+                                "tripNumber": null,
+                                "officialItineraryTxt": null,
+                                "perDiemDaysNbr": null,
+                                "descName": null,
+                                "startLocInd": null,
+                                "endLocInd": null,
+                                "startCityStateKey": null,
+                                "endCityStateKey": null,
+                                "dsCityStateKey": null,
+                                "tripType": "round-trip",
+                                "gsaToggle": null,
+                                "tripTravelText": null,
+                                "expenses": null,
+                                "tripLegs": [
+                                    {
+                                        "legKey": null,
+                                        "originCityStateId": "V21178",
+                                        "destinationCityStateId": "Y11293",
+                                        "startDate": "07/30/2021",
+                                        "endDate": "07/30/2021",
+                                        "officialIndicator": null,
+                                        "originDutyStationIndicator": true,
+                                        "originResidenceIndicator": null,
+                                        "originOtherIndicator": null,
+                                        "destinationDutyStationIndicator": null,
+                                        "destinationResidenceIndicator": null,
+                                        "destinationOtherIndicator": null,
+                                        "legNumber": 1,
+                                        "residenceCloserThanDutyStation": null,
+                                        "residenceTravelOutsideWorkHours": null,
+                                        "legActivityDesc": null,
+                                        "returnToOfficeEnteringDutyStation": null,
+                                        "originCityStateQuery": "WASHINGTON,DC",
+                                        "destinationCityStateQuery": null,
+                                        "originIndicator": "dutyStation"
+                                    },
+                                    {
+                                        "legKey": null,
+                                        "originCityStateId": "Y11293",
+                                        "destinationCityStateId": "V21178",
+                                        "startDate": "07/30/2021",
+                                        "endDate": "07/30/2021",
+                                        "officialIndicator": null,
+                                        "originDutyStationIndicator": null,
+                                        "originResidenceIndicator": null,
+                                        "originOtherIndicator": null,
+                                        "destinationDutyStationIndicator": true,
+                                        "destinationResidenceIndicator": null,
+                                        "destinationOtherIndicator": null,
+                                        "legNumber": 2,
+                                        "residenceCloserThanDutyStation": null,
+                                        "residenceTravelOutsideWorkHours": null,
+                                        "legActivityDesc": null,
+                                        "returnToOfficeEnteringDutyStation": false,
+                                        "originCityStateQuery": "WILMER,AL",
+                                        "destinationCityStateQuery": null
+                                    },
+                                    {
+                                        "legKey": null,
+                                        "originCityStateId": "V21178",
+                                        "destinationCityStateId": "V21178",
+                                        "startDate": "07/30/2021",
+                                        "endDate": "07/30/2021",
+                                        "officialIndicator": null,
+                                        "originDutyStationIndicator": true,
+                                        "originResidenceIndicator": null,
+                                        "originOtherIndicator": null,
+                                        "destinationDutyStationIndicator": true,
+                                        "destinationResidenceIndicator": null,
+                                        "destinationOtherIndicator": null,
+                                        "legNumber": 3,
+                                        "residenceCloserThanDutyStation": null,
+                                        "residenceTravelOutsideWorkHours": null,
+                                        "legActivityDesc": null,
+                                        "returnToOfficeEnteringDutyStation": null,
+                                        "originCityStateQuery": "WASHINGTON,DC",
+                                        "destinationCityStateQuery": null,
+                                        "originIndicator": "dutyStation"
+                                    }
+                                ]
+                            }
+                        ],
+                        "travelerInfo": {
+                            "dutyStationInfo": {
+                                "cityStateId": "V21178",
+                                "dcMetroInd": "Y",
+                                "doUspsInd": "U",
+                                "prefCityName": "WASHINGTON",
+                                "stateAbbrev": "DC",
+                                "zipCodeCd": null
+                            },
+                            "residenceInfo": {
+                                "cityStateId": "V21178",
+                                "dcMetroInd": "Y",
+                                "doUspsInd": "U",
+                                "prefCityName": "WASHINGTON",
+                                "stateAbbrev": "DC",
+                                "zipCodeCd": null
+                            },
+                            "vendorDutyStation": null
+                        },
+                        "expenseCategoryDescription": null,
+                        "documentId": "DMKY20190004",
+                        "memberVendorInfo": {
+                            "memberUserId": null,
+                            "memberDisplayName": "MALATESTA,NICHOLAS M                              ",
+                            "memberVendorId": "E000226666",
+                            "memberVendorSuffix": "01",
+                            "address1": "250 K ST. NE                            ",
+                            "address2": "APT. 306                                ",
+                            "addressCity": "WASHINGTON               ",
+                            "addressState": "DC",
+                            "addressZip": "20002     ",
+                            "addressCountry": "USA",
+                            "disbType": "P",
+                            "vendorCategory": "EMPY",
+                            "dutyStation": "WASHINGTON,DC       ",
+                            "multipleUsersIds": null
+                        },
+                        "travelerListString": "MALATESTA,NICHOLAS M; ",
+                        "showItinerary": false,
+                        "index": 1,
+                        "expenseTitle": "Expense 1"
+                    }
+                ]
+            }
+        }
+    }
+settings: {}
+order: 1000

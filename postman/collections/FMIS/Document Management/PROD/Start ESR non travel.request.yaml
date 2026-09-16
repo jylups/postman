@@ -1,0 +1,14 @@
+$kind: http-request
+url: https://fmis.senate.gov/workflow/api/workflow/initiate-process
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentType": "expenseSummaryReport",
+        "documentSubType": "non-travel",
+        "documentId": "ESR202204768",
+        "documentOrgCode": "BAL"
+    }
+settings: {}
+order: 19000

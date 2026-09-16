@@ -1,0 +1,23 @@
+$kind: collection
+variables:
+  server_base: http://localhost:8083/workflow-service
+  user_id: jc@cllc.io
+  candidate_process_id: 0c66e0a1-5cda-11f0-ac37-021b2a04d220
+  comment_id: 00c1fa4c-6c19-11f0-92dc-ee5c154702b7
+  stage_instance_id: 5f0c8764-6d6b-11f0-8c6c-9e253284a0ec
+  plant_item_id: 5f0c8764-6d6b-11f0-8c6c-9e253284a0ec
+  case-inbox-rest-server: http://localhost:8083/case-inbox-rest
+  comm-manager-server: http://localhost:8080/comm
+auth:
+  - id: 04242454-b226-4b32-9d2e-d65279af41c1
+    type: oauth2
+    name: oauth2 auth
+    credentials:
+      clientId: xcelerate-client
+      accessTokenUrl: https://sso.aks.iworkscorp.ai/realms/xcelerate-dev/protocol/openid-connect/token
+      authUrl: https://sso.aks.iworkscorp.ai/realms/xcelerate-dev/protocol/openid-connect/auth
+      tokenName: jylupsToken
+      addTokenTo: header
+      clientSecret: 5dxwT2BWsBowvAOTrJFcZfSe2bv8nWqU
+      scope: openid profile email
+      redirect_uri: https://oauth.pstmn.io/v1/callback

@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/document/data/v2/create/voucher/PSCO21900055"
+method: GET
+settings: {}
+order: 28000

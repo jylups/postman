@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{serverURI}}/modern/api/fmis/data/v2/office/appropriations/SAACPDOODOOD"
+method: GET
+settings: {}
+order: 3000

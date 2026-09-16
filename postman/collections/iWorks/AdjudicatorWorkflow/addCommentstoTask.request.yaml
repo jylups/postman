@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{server_base}}/process-api/runtime/tasks/{{user_task_id}}/comments"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "author": "admin",
+      "message": "This is a new comment",
+      "type": "string",
+      "saveProcessInstanceId": true
+    }
+settings: {}
+order: 5000

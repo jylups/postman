@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{documentServiceURL}}/api/document/ros/remove-user/JC84415"
+method: GET
+body:
+  type: json
+  content: |-
+    {
+        "reportStyle": "full",
+        "requestedReportTypes": [
+            "MASTER"
+        ],
+        "reportCodes": ["LOE"],
+        "fundYears":["2020"]
+
+    }
+settings: {}
+order: 17000

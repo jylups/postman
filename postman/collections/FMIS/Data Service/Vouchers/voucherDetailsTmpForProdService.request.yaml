@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/vouchers/update"
+method: GET
+settings: {}
+order: 5000

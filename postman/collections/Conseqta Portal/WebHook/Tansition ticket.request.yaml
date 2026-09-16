@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{worklogServiceDev}}/worklog/webhook/issue/{{sampleJiraId}}/transition/JC84415"
+method: GET
+auth:
+  type: noauth
+settings: {}
+order: 1000

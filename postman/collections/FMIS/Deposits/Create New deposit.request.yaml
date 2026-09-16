@@ -1,0 +1,53 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/data/deposit/save"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "depositKey": null,
+      "depositNbr": null,
+      "accountInfo": "Account info",
+      "checkBackSignedFlag": true,
+      "checkNegotiableFlag": false,
+      "checkPayableSenateFlag": true,
+      "checkRoutingFlag": false,
+      "depositRelatedType": 1,
+      "depositType": 2,
+      "endDate": "10/02/2019",
+      "formOfDeposit": 1,
+      "fundingYear": 1221,
+      "startDate": "10/02/2019",
+      "vendorNo": null,
+      "orgCode": null,
+      "depositDetails": [
+        {
+          "depositDetailKey": null,
+          "accountingCode": "ActCD",
+          "amount": 1234.12,
+          "expenseCategory": "213101",
+          "fundingYearKey": null
+        }
+      ],
+      "documentReferenceNbr": null,
+      "revolvingFlag": null,
+      "approvedFlag": null,
+      "attatchedFlag": null
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token1}}"
+scripts:
+  - type: afterResponse
+    code: |-
+      var data = JSON.parse(responseBody);
+
+
+      pm.environment.set('depositId',data.depositKey);
+      pm.environment.set('documentId',data.depositNbr);
+    language: text/javascript
+settings: {}
+order: 2000

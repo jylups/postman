@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{portal_base_development}}/api/Workbaskets/vista"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "start": 0,
+        "size": 10,
+        "sort": "createTime",
+        "order": "asc"
+    }
+settings: {}
+order: 1000

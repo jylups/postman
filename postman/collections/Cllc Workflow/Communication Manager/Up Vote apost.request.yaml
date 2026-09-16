@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{comm-manager-server}}/communication/cases/{{case_instance_id}}/forum/posts/{{post_id}}/vote"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "voteType": "UPVOTE"
+    }
+settings: {}
+order: 3000

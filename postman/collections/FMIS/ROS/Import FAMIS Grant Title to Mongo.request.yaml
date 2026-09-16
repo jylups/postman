@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/etl/data/grant-title/import/all"
+method: GET
+settings: {}
+order: 25000

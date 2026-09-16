@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://fmis.senate.gov/modern/api/fmis/etl/data/ros/export-to-mongo/doc-header/no-travel-text
+method: GET
+settings: {}
+order: 4000

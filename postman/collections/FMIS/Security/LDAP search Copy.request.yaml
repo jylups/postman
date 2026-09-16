@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://uaas-service-fmis-dev.os1.senate.gov/api/uaas/ldap/search/CW84444
+method: GET
+settings: {}
+order: 7000

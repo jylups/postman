@@ -1,0 +1,33 @@
+$kind: http-request
+url: http://localhost:8083/grants-rest/api/grant
+method: PUT
+body:
+  type: json
+  content: |
+    {
+      "name": "Integrated University Program",
+      "category": "FORMULA",
+      "fundingInstrumentType": "GRANTS",
+      "applicationClosingDateTime": "2022-08-18T15:39:51.308Z",
+      "costSharingRequirements": true,
+      "cfdaNumbers": [
+        "123456","1234567865"
+      ],
+      "estimatedTotalProgramFunding": 0,
+      "awardCeiling": 0,
+      "awardFloor": 0,
+      "additionalEligibiliityInfo": " Public housing authorities/Indian housing authorities ",
+      "eligibiliityRequirements": " Native American tribal organizations (other than Federally recognized tribal governments), Private institutions of higher education,  Independent school districts,  City or township governments",
+      "linkToAddtionalInformation": "https://www.usaid.gov/vietnam",
+      "grantContactDescription": "Hoa Nguyen Grantor hoanguyen@usaid.gov",
+      "description": "USAID/ Vietnam intends to issue a Cooperative Agreement for USAID/ Vietnam's Inclusion II-b activity. The anticipated period of performance of this activity is four years.",
+      "granteeId": "string",
+      "team": {
+                "id": "{{teamId}}",
+                "teamName": "USDA SNAP Grants Team",
+                "metaData": null,
+                "subjects": null
+            }
+    }
+settings: {}
+order: 1000

@@ -1,0 +1,37 @@
+$kind: http-request
+url: https://fmis.senate.gov/modern/api/fmis/data/v2/doc-advanced-search/agg-filters
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "page": 0,
+        "size": 25,
+        "direction": "DESC",
+        "orderBy": "docnumber",
+        "taskStatusType": null,
+        "searchFilter": null,
+        "officeCd": "BAL",
+        "officeCodeList": [
+            "BAL"
+        ],
+        "fundYears": [
+            "197"
+        ],
+        "docTypes": [],
+        "vendorNbrAndSuffixs": [],
+        "expenseCodes": [],
+        "statuses": [],
+        "startDate": null,
+        "endDate": null,
+        "startEndRange": null,
+        "paymentDate": null,
+        "paymentDateRange": null,
+        "docNumber": null,
+        "accountNbr": null,
+        "invoicenbr": null,
+        "transactionDescription": null,
+        "accountingCodes": []
+    }
+settings: {}
+order: 3000

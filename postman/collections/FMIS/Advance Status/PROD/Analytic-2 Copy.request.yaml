@@ -1,0 +1,50 @@
+$kind: http-request
+url: https://fmis.senate.gov/modern/api/fmis/advance-status/analytic-2
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "statuses": [],
+        "startDateBegin": "01/01/2020",
+        "startDateEnd": "12/31/2020",
+        "endDateBegin": "1/01/2020",
+        "endDateEnd": "12/31/2020",
+        "officeCds": [
+            "BLA",
+            "BOO",
+            "CAS",
+            "COL",
+            "COO",
+            "CRP",
+            "CST",
+            "DUC",
+            "ENZ",
+            "FIS",
+            "GAR",
+            "GIL",
+            "HEI",
+            "HIR",
+            "JOE",
+            "JOR",
+            "KNN",
+            "LEE",
+            "MAN",
+            "MRK",
+            "MRP",
+            "MUY",
+            "PAU",
+            "PER",
+            "RIS",
+            "ROS",
+            "ROU",
+            "RUB",
+            "SBU",
+            "UDT",
+            "WRN",
+            "ZSA"
+        ],
+        "vendorNbrs": []
+    }
+settings: {}
+order: 2000

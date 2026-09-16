@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{token_endpoint}}"
+method: POST
+body:
+  type: urlencoded
+  content:
+    username: "{{vault:keycloak_fedtec_user}}"
+    client_id: "{{vault:keycloak_dev_client}}"
+    client_secret: "{{vault:Keycloak_dev_secret}}"
+    grant_type: password
+    password: "{{vault:kyecloak_fedtec_password}}"
+scripts:
+  - type: afterResponse
+    code: |-
+      var jsonData = JSON.parse(responseBody);
+      postman.setEnvironmentVariable("refresh_token", jsonData.refresh_token);
+      postman.setEnvironmentVariable("access_token", jsonData.access_token);
+    language: text/javascript
+settings: {}
+order: 2000

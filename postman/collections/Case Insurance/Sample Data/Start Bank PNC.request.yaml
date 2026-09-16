@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://localhost:8084/insurance-case/api/case/bank
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+      "name": "PNC Bank",
+      "mainAddress": {
+        "city": "New York",
+        "state": "NY",
+        "zipcode": "10001",
+        "isoCountryCode": "US",
+        "street": "1201 5th ave"
+      },
+      "bankShortNameId": "PNC"
+    }
+settings: {}
+order: 5000

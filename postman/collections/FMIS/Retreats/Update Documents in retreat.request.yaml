@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/data/v2/retreats/update-documents-in-retreat"
+method: POST
+body:
+  type: json
+  content: |
+    {
+      "retreatNumber": "RTLNK2021002",
+      "documentIds" : ["DLNK20210610"],
+      "docTypetoUpdate": "VC",
+      "memberVendorId": "E000227253",
+      "retreatEventType": "DATA_SERVICE_UPDATE"
+    }
+settings: {}
+order: 9000

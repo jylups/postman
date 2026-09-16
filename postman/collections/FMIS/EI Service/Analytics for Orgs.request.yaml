@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{eiServicesURL}}/api/ei/analytics/summary-by-office/DUC"
+method: GET
+settings: {}
+order: 5000

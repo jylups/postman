@@ -1,0 +1,5 @@
+$kind: http-request
+url: https://uat.fmis.senate.gov/umanagement/api/fmis/um/v2/account
+method: GET
+settings: {}
+order: 1000

@@ -1,0 +1,10 @@
+$kind: http-request
+url: https://api.idmelabs.com/oauth/authorize?client_id=fe479261d37f5a9472800ffd3e7abaa1&redirect_uri=http://localhost&response_type=code+id_token&scope=openid%20http://idmanagement.gov/ns/assurance/ial/1/aal/2
+method: GET
+queryParams:
+  client_id: fe479261d37f5a9472800ffd3e7abaa1
+  redirect_uri: http://localhost
+  response_type: code+id_token
+  scope: openid%20http://idmanagement.gov/ns/assurance/ial/1/aal/2
+settings: {}
+order: 1000

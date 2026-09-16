@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{uaasClientURL}}/oidc-client-library/api/user/userInfo"
+method: GET
+settings: {}
+order: 4000

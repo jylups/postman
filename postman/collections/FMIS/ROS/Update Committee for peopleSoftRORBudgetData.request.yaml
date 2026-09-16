@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{documentServiceURL}}/api/document/ros/import/update-committee"
+method: GET
+settings: {}
+order: 27000

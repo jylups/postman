@@ -1,0 +1,12 @@
+$kind: http-request
+url: https://fmis.senate.gov/modern/api/fmis/data/v2/retreats/search-possible-office-attendees/office
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "searchQueryRegex": "burton",
+        "eidList": []
+    }
+settings: {}
+order: 6000

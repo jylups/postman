@@ -1,0 +1,5 @@
+$kind: http-request
+url: "{{notificationService}}/api/notification/resend/failed/5f74d7850e4bce00014b3d5a"
+method: POST
+settings: {}
+order: 1000

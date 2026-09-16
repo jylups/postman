@@ -1,0 +1,5 @@
+$kind: http-request
+url: http://famc-workflow-service.azurewebsites.net/workflow-service/process-api/runtime/tasks/{{task_id}}
+method: DELETE
+settings: {}
+order: 3000

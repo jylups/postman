@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{workflowServiceURI}}/api/workflow/initiate-process"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "documentType": "directVoucher",
+        "documentId": "DSCH201901XX",
+        "documentOrgCode": "SCH             ",
+        "documentSubTypeId": "purchase",
+        "documentSubType": "electronicInvoice"
+    }
+settings: {}
+order: 3000

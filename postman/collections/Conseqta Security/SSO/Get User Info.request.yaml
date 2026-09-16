@@ -1,0 +1,6 @@
+$kind: http-request
+description: Get User Info
+url: "{{keycloakServer}}/realms/cllc-development/protocol/openid-connect/userinfo"
+method: GET
+settings: {}
+order: 5000

@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{dataServiceURL}}/api/fmis/etl/data/update/advanced-search-documents/document-list"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: '["APAU20200001"]'
+settings: {}
+order: 8000

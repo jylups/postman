@@ -1,0 +1,31 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-query/historic-planitem-instances"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "start": 0,
+      "size": 20,
+      "caseInstanceId": "{{case_instance_id}}",
+      "planItemDefinitionType": "stage",
+      "planItemInstanceState": "active",
+      "sort": "createTime"
+      
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+
+       pm.test("Take the last task ID from the list",function(){
+           const responseJson = pm.response.json();
+           pm.expect(responseJson.data.length).to.greaterThan(0);
+           pm.environment.set('active_plan_createTime', responseJson.data[responseJson.data.length -1].createTime);
+       });
+    language: text/javascript
+settings: {}
+order: 22000

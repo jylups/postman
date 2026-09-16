@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-repository/case-definitions/{{case_definition_id}}/model"
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Success", function(){
+          pm.response.to.have.status(200);
+      }
+      );
+
+       pm.test("Take the last task ID from the list",function(){
+           const responseJson = pm.response.json();
+           pm.expect(responseJson.data.length).to.greaterThan(0);
+
+       });
+    language: text/javascript
+settings: {}
+order: 3000
