@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{server_base}}/process-api/runtime/tasks/{{task_id}}/variables/caseReviewer"
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+            "name": "caseReviewer",
+            "scope": "global",
+            "type": "string",
+            "value": "93c25f34-06a5-4d01-87fa-ecfaeda465e0"
+    }
+settings: {}
+order: 10278

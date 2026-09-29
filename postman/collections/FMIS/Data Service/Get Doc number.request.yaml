@@ -1,9 +1,0 @@
-$kind: http-request
-url: http://localhost:8086/api/fmis/document/data/v2/direct-voucher/DGIL20190002
-method: GET
-auth:
-  type: bearer
-  credentials:
-    token: "{{token1}}"
-settings: {}
-order: 17000

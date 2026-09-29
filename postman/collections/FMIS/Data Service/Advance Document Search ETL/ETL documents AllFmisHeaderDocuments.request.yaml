@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/etl/data/update/advanced-search-documents/all-documents/AllFmisHeaderDocuments"
-method: GET
-settings: {}
-order: 7000

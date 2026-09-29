@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://iworks-case.jylups.com/workflow-service/cmmn-api/cmmn-repository/deployments/5f572ed6-55eb-11f0-b4b3-928ff1c87359/resourcedata/rfaCaseManagement.rfaCaseManagement.png
-method: GET
-settings: {}
-order: 2000

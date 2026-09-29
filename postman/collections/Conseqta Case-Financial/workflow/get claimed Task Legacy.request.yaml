@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://localhost:9083/api/workflow/claimed/tasks/count
-method: GET
-settings: {}
-order: 2000

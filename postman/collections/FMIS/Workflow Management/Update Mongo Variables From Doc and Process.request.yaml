@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{workflowServiceURI}}/api/workflow/admin/update/processvariables/{{processInstanceId}}/{{documentId}}"
-method: GET
-settings: {}
-order: 13000

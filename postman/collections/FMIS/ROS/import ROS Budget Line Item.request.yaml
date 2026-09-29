@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/etl/data/ros/export-to-mongo/budget-line-item"
-method: GET
-settings: {}
-order: 21000

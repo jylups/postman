@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{server_base}}/process-api/runtime/tasks/{{user_task_id}}/comments"
-method: GET
-settings: {}
-order: 6000

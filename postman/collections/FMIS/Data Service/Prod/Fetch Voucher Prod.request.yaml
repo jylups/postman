@@ -1,9 +1,0 @@
-$kind: http-request
-url: https://fmis.senate.gov/modern/api/fmis/document/data/v2/voucher/{{voucherDocNo}}
-method: GET
-auth:
-  type: bearer
-  credentials:
-    token: "{{token1}}"
-settings: {}
-order: 20000

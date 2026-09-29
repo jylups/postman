@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://uat.fmis.senate.gov/imaging/api/imaging/documents/DLEE20210229
-method: GET
-settings: {}
-order: 2000

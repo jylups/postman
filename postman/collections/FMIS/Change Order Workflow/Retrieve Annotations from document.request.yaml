@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{ImagingService}}/api/imaging/document/annotations/{{fileId}}"
-method: GET
-settings: {}
-order: 4000

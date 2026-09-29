@@ -1,7 +1,0 @@
-$kind: http-request
-url: "{{uaasClientURL}}/oidc-client-library/api/test/heroes"
-method: GET
-auth:
-  type: noauth
-settings: {}
-order: 7000

@@ -1,8 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/etl/data/traveltext/build-from-docs"
-method: POST
-body:
-  type: json
-  content: '["DBAL20210099"]'
-settings: {}
-order: 4000

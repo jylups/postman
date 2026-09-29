@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{user_management_service}}/user-management/profile-picture"
-method: GET
-settings: {}
-order: 1000

@@ -9,15 +9,35 @@ variables:
   case-inbox-rest-server: http://localhost:8083/case-inbox-rest
   comm-manager-server: http://localhost:8080/comm
 auth:
-  - id: 04242454-b226-4b32-9d2e-d65279af41c1
-    type: oauth2
-    name: oauth2 auth
-    credentials:
-      clientId: xcelerate-client
-      accessTokenUrl: https://sso.aks.iworkscorp.ai/realms/xcelerate-dev/protocol/openid-connect/token
-      authUrl: https://sso.aks.iworkscorp.ai/realms/xcelerate-dev/protocol/openid-connect/auth
-      tokenName: jylupsToken
-      addTokenTo: header
-      clientSecret: 5dxwT2BWsBowvAOTrJFcZfSe2bv8nWqU
-      scope: openid profile email
-      redirect_uri: https://oauth.pstmn.io/v1/callback
+  type: oauth2
+  credentials:
+    - key: tokenType
+      value: Bearer
+    - key: token_id
+      value: 2058ca31-6349-4644-ada4-56de05d2c70b
+    - key: accessToken
+      value: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJZNkFmUHQwWGxaeFlydGo1S3V5S2lpcG5pQXcyMWtVY2VSV0p3ZWhuZHJvIn0.eyJleHAiOjE3OTAzNTcwOTAsImlhdCI6MTc5MDM1NjgyMiwiYXV0aF90aW1lIjoxNzkwMzU2MTkwLCJqdGkiOiJvbnJ0cnQ6ZWEzYTI1MjktN2VmMi1mNjk3LTljNzktMTZkZTE4OTQwZTlmIiwiaXNzIjoiaHR0cHM6Ly9zc28uYWtzLml3b3Jrc2NvcnAuYWkvcmVhbG1zL3hjZWxlcmF0ZS1kZXYiLCJhdWQiOlsiZW5vbGEtY2xpZW50IiwicmVhbG0tbWFuYWdlbWVudCIsInBhcGVycHJvb2YtY2xpZW50IiwiZGhzLWNsaWVudCIsImFjY291bnQiXSwic3ViIjoiOTNjMjVmMzQtMDZhNS00ZDAxLTg3ZmEtZWNmYWVkYTQ2NWUwIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoieGNlbGVyYXRlLWNsaWVudCIsInNpZCI6InJORkZ3alBZdERUYk5iemFpUE1uRHFIUiIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLXhjZWxlcmF0ZS1kZXYiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImVub2xhLWNsaWVudCI6eyJyb2xlcyI6WyJHT1ZFUk5NRU5UX1VTRVIiLCJBREpVRElDQVRPUiIsIlNZU1RFTV9BRE1JTklTVFJBVE9SIiwiVFJBSU5JTkdfQUNDRVNTIiwiQU5BTFlTVCIsIlJFU09VUkNFX0RPQ1VNRU5UX01BTkFHRVIiLCJBU1NJR05FUiIsIkRBVEFfTUFOQUdFUiIsIlNVUEVSVklTT1IiLCJTQ09QRVIiLCJHT1ZfRFJPUF9aT05FIiwiQ0FTRV9NQU5BR0VSIiwiREFTSEJPQVJEX0FDQ0VTUyIsIkNBU0VfSU5JVElBVE9SIiwiQ0xPU0VEX0NBU0VfQUNDRVNTIiwiQURNSU5JU1RSQVRPUiIsIlJFVklFV0VSIiwiVVNFUl9BRE1JTklUUkFUT1IiLCJDTE9TRVIiLCJJTlZFU1RJR0FUT1IiLCJBTExfQ0FTRV9BQ0NFU1MiLCJDQU5DRUxfUFJPQ0VTUyIsIlNFQ1VSSVRZX09GRklDRVIiLCJDQVNFX1ZJRVdfQUNDRVNTIl19LCJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctaWRlbnRpdHktcHJvdmlkZXJzIiwidmlldy1yZWFsbSIsIm1hbmFnZS1pZGVudGl0eS1wcm92aWRlcnMiLCJpbXBlcnNvbmF0aW9uIiwicmVhbG0tYWRtaW4iLCJjcmVhdGUtY2xpZW50IiwibWFuYWdlLXVzZXJzIiwicXVlcnktcmVhbG1zIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsInZpZXctY2xpZW50cyIsIm1hbmFnZS1hdXRob3JpemF0aW9uIiwibWFuYWdlLWNsaWVudHMiLCJxdWVyeS1ncm91cHMiXX0sInhjZWxlcmF0ZS1jbGllbnQiOnsicm9sZXMiOlsiVVNFUl9SRUFET05MWSIsIkFETUlOSVNUUkFUT1IiLCJUUkFJTklOR19BQ0NFU1MiLCJEQVRBX01BTkFHRVIiLCJVU0VSX0FETUlOSVNUUkFUT1IiXX0sInBhcGVycHJvb2YtY2xpZW50Ijp7InJvbGVzIjpbIkdPVkVSTk1FTlRfVVNFUiIsIkFESlVESUNBVE9SIiwiUkVTT1VSQ0VfRE9DVU1FTlRfTUFOQUdFUiIsIkFOQUxZU1QiLCJBU1NJR05FUiIsIkRBVEFfTUFOQUdFUiIsIlNVUEVSVklTT1IiLCJTQ09QRVIiLCJDQVNFX01BTkFHRVIiLCJSRUFEX09OTFlfQ0FTRV9BQ0NFU1MiLCJEQVNIQk9BUkRfQUNDRVNTIiwiQ0FTRV9JTklUSUFUT1IiLCJBRE1JTklTVFJBVE9SIiwiQ0xPU0VEX0NBU0VfQUNDRVNTIiwiUkVWSUVXRVIiLCJDTE9TRVIiLCJJTlZFU1RJR0FUT1IiLCJBTExfQ0FTRV9BQ0NFU1MiLCJDQU5DRUxfUFJPQ0VTUyIsIkNBU0VfR1VFU1QiLCJSRVNPVVJDRV9ET0NVTUVOVF9SRUFET05MWSIsIlVTRVJfQURNSU5JU1RSQVRPUiIsIlNFQ1VSSVRZX09GRklDRVIiLCJDQVNFX1ZJRVdfQUNDRVNTIl19LCJkaHMtY2xpZW50Ijp7InJvbGVzIjpbIkdPVkVSTk1FTlRfVVNFUiIsIkFESlVESUNBVE9SIiwiQU5BTFlTVCIsIlJFU09VUkNFX0RPQ1VNRU5UX01BTkFHRVIiLCJTWVNURU1fQURNSU5JU1RSQVRPUiIsIkFTU0lHTkVSIiwiREFUQV9NQU5BR0VSIiwiU1VQRVJWSVNPUiIsIlNDT1BFUiIsIkNBU0VfTUFOQUdFUiIsIkRBU0hCT0FSRF9BQ0NFU1MiLCJDQVNFX0lOSVRJQVRPUiIsIkFETUlOSVNUUkFUT1IiLCJDTE9TRURfQ0FTRV9BQ0NFU1MiLCJSRVZJRVdFUiIsIkNMT1NFUiIsIklOVkVTVElHQVRPUiIsIkFMTF9DQVNFX0FDQ0VTUyIsIkNBTkNFTF9QUk9DRVNTIiwiQ0FTRV9WSUVXX0FDQ0VTUyIsIlNFQ1VSSVRZX09GRklDRVIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IkpvcmdlIENhcnZhbGxvIiwiZ3JvdXBzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy14Y2VsZXJhdGUtZGV2IiwidW1hX2F1dGhvcml6YXRpb24iXSwicHJlZmVycmVkX3VzZXJuYW1lIjoiamNhcnZhbGxvIiwiZ2l2ZW5fbmFtZSI6IkpvcmdlIiwiZmFtaWx5X25hbWUiOiJDYXJ2YWxsbyIsImVtYWlsIjoiamNhcnZhbGxvQGl3b3Jrc2NvcnAuY29tIn0.j9tNs3PZDQLqa4Ndzu6bSID-kS8py9ljCX5Ffqpdzv6kUELL7hs9RmpwaSD4z8U67B5SyrLTE8Om-fqJMQGvKUV10n8tg_efWacCFcvjpSZ780K75dCSHOVVvggsZs-s6NOeJNyg8E23lp3tK87Ef3FpZTiBEQKcVdgqukvj2S5LmnNwcaFl7agTqHzGdfN3hZTl4I8i0lOwlApMkOR5PBxD2qbnv5DsHQj1HriT-ihj5k6uNEWueX_wJ7r4pttfhP_Dmp1GLNpWXQFP2OT-jQ4yBnxAdFuHizhmyFLxZ2Q2ZoyOp2IN2edLkYREZ66Krj88_0dBD_ap9LhHVOGtBg
+    - key: expires_in
+      value: 268
+    - key: timestamp
+      value: 1790356822052
+    - key: clientId
+      value: enola-client
+    - key: accessTokenUrl
+      value: https://sso.aks.iworkscorp.ai/realms/xcelerate-dev/protocol/openid-connect/token
+    - key: authUrl
+      value: https://sso.aks.iworkscorp.ai/realms/xcelerate-dev/protocol/openid-connect/auth
+    - key: tokenName
+      value: jylupsToken
+    - key: addTokenTo
+      value: header
+    - key: clientSecret
+      value: Buj1Awrj7jiAOqsxf1mtJympUW6vF4Sq
+    - key: scope
+      value: openid profile email
+    - key: redirect_uri
+      value: https://oauth.pstmn.io/v1/callback
+    - key: id
+      value: collection/EBA8b314e0C4e08397c1ec0b/801afba3-4dce-4017-8af9-c89da3f3c729/filesystem
+    - key: id
+      value: collection/EBA8b314e0C4e08397c1ec0b/801afba3-4dce-4017-8af9-c89da3f3c729/filesystem

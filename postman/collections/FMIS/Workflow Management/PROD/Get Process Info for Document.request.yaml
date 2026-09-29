@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://fmis.senate.gov/workflow/api/workflow/document/process/info/PSAA22001541-01
-method: GET
-settings: {}
-order: 8000

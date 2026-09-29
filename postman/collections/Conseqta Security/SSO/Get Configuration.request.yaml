@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{keycloakServer}}/realms/cllc-development/.well-known/openid-configuration"
-method: GET
-settings: {}
-order: 2000

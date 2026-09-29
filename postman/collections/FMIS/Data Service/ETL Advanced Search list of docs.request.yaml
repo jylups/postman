@@ -1,8 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/etl/data/update/advanced-search-documents/document-list"
-method: POST
-body:
-  type: json
-  content: '["RSAA22000238"]'
-settings: {}
-order: 14000

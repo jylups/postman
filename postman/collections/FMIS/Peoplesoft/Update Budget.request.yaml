@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://localhost:9089/api/peoplesoft/budget/sync/data
-method: GET
-settings: {}
-order: 2000

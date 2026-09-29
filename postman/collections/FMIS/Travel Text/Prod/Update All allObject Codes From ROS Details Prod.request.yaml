@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{dataServiceProd}}/api/fmis/etl/data/traveltext/update-objecttitle/all/documents"
-method: GET
-settings: {}
-order: 4000

@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://uat.fmis.senate.gov/document/api/document/delete/document/6182f33452c6bc69ba43dbaf
-method: DELETE
-settings: {}
-order: 4000

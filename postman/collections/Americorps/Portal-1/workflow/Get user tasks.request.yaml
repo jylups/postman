@@ -1,7 +1,0 @@
-$kind: http-request
-url: "{{portal_base}}/api/Workflow/process-api/runtime/tasks-by-user-owner?userId={{user_id}}"
-method: GET
-queryParams:
-  userId: "{{user_id}}"
-settings: {}
-order: 1000

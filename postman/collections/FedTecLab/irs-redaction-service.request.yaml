@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://irs-redaction-service.dev.fedteclab.com/irs-redaction-service/async/upload
-method: POST
-settings: {}
-order: 10000

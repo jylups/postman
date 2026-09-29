@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/data/v2/fetch/vendors-name-no-address/V000000742"
-method: GET
-settings: {}
-order: 1000

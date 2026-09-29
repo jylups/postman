@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://fmis.senate.gov/document/api/document/download/62bc8622342fd30001bad9b0
-method: GET
-settings: {}
-order: 20000

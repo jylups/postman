@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{workflowServiceURI}}/api/workflow/activate/{{workflowIdToRestore}}"
-method: GET
-settings: {}
-order: 11000

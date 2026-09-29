@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/data/deposit/{{documentId}}"
-method: GET
-settings: {}
-order: 9000

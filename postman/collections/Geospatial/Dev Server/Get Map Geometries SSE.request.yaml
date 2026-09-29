@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://geospatial-data-query-service.conseqta.io/geo-data/sse/5
-method: GET
-settings: {}
-order: 1000

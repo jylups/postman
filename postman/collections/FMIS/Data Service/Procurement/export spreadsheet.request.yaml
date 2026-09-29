@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://localhost:9087/api/procurement-management/export
-method: GET
-settings: {}
-order: 2000

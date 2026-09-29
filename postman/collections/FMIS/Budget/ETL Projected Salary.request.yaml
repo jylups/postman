@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://fmis.senate.gov/budget/api/etl/projected-salary
-method: GET
-settings: {}
-order: 1000

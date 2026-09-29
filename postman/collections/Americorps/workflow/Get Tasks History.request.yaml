@@ -1,7 +1,0 @@
-$kind: http-request
-url: http://localhost:8083/workflow-service/process-api/history/historic-task-instances?processInstanceId=2f0a01d7-664b-11ef-b01f-4ae9f599aa2c
-method: GET
-queryParams:
-  processInstanceId: 2f0a01d7-664b-11ef-b01f-4ae9f599aa2c
-settings: {}
-order: 9000

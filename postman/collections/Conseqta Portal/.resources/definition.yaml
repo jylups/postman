@@ -1,8 +1,0 @@
-$kind: collection
-description: Conseqta Portal Development
-auth:
-  - id: d5252c7c-0671-4f70-9194-60f78b44b9cf
-    type: bearer
-    name: bearer auth
-    credentials:
-      token: "{{access_token}}"

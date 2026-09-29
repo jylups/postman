@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://fmis-workflow-engine-service-fmis-dev.apps.vcs1.senate.gov/api/workflow/posting/manually/import-travel-text-from-posting/DBAL20190176
-method: GET
-settings: {}
-order: 8000

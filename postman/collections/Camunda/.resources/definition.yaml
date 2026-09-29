@@ -1,8 +1,0 @@
-$kind: collection
-auth:
-  - id: 48e410e2-8a0b-4843-a094-2e64a790d1e7
-    type: basic
-    name: basic auth
-    credentials:
-      username: camunda
-      password: password

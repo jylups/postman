@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://localhost:8083/api/user/userInfo
-method: GET
-settings: {}
-order: 1000

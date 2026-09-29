@@ -1,9 +1,0 @@
-$kind: http-request
-url: "{{keycloakServer}}/admin/realms/cllc-development/users?username=admin&max=10&first=0"
-method: GET
-queryParams:
-  username: admin
-  max: "10"
-  first: "0"
-settings: {}
-order: 8000

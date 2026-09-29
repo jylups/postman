@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{server_base}}/process-api/history/historic-task-instances/{{task_id}}"
-method: GET
-settings: {}
-order: 7000

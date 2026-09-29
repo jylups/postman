@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://localhost:8087/api/ei/analytics/summary-by-office/
-method: GET
-settings: {}
-order: 3000

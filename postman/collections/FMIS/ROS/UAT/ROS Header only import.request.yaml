@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://uat.fmis.senate.gov/modern/api/fmis/etl/data/ros/export-to-mongo/doc-header
-method: GET
-settings: {}
-order: 3000

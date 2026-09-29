@@ -1,8 +1,0 @@
-$kind: http-request
-url: https://fmis.senate.gov/modern/api/fmis/etl/data/update/advanced-search-documents/document-list
-method: POST
-body:
-  type: json
-  content: '["ALEE20220003"]'
-settings: {}
-order: 8000

@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://uat.fmis.senate.gov/document/api/document/commitId
-method: GET
-settings: {}
-order: 3000

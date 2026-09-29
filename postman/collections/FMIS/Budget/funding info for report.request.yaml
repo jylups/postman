@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/data/v2/funding/org/GAF"
-method: GET
-settings: {}
-order: 4000

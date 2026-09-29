@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{userManagementService}}/api/fmis/um/v2/copy-authorities/DOAP/JC84415"
-method: GET
-settings: {}
-order: 4000

@@ -1,7 +1,0 @@
-$kind: http-request
-url: http://{{DevServerURL}}/claim/
-method: GET
-body:
-  type: formdata
-  content: []
-order: 6000

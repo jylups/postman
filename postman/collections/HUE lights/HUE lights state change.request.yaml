@@ -1,9 +1,0 @@
-$kind: http-request
-url: http://10.0.0.172/api/lvHccyte3d7SMeLenUCTMC-nZ3O5sn2wnSYa4E4f/lights/1/state
-method: PUT
-headers:
-  Content-Type: application/json
-body:
-  type: text
-  content: '{"on":true, "bri":255, "sat":25, "hue":55, "transitiontime":5}'
-order: 1000

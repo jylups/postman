@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://localhost:8089/api/fmis/analytics/v2/commitId
-method: GET
-settings: {}
-order: 10000

@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://localhost:9081/api/fmis/um/v2/direct-messages/user-list/DCTZ20200228
-method: GET
-settings: {}
-order: 3000

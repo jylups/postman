@@ -1,7 +1,0 @@
-$kind: http-request
-url: http://localhost:8083/workflow-service/process-api/runtime/process-instances/:processInstanceID/diagram
-method: GET
-pathVariables:
-  processInstanceID: 2f0a01d7-664b-11ef-b01f-4ae9f599aa2c
-settings: {}
-order: 6000

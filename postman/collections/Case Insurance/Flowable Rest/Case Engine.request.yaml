@@ -1,7 +1,0 @@
-$kind: http-request
-url: http://localhost:8084/insurance-case/cmmn-api/cmmn-repository/case-definitions
-method: GET
-auth:
-  type: noauth
-settings: {}
-order: 1000

@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://localhost:8083/financial-uaas-client/api/financial/account
-method: GET
-settings: {}
-order: 6000

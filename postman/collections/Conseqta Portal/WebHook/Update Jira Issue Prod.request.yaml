@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://conseqta-worklog-web.conseqta.io/worklog/webhook/issue/FDB-5024
-method: GET
-settings: {}
-order: 2000

@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{worklogServiceDev}}/worklog/api/query/worklog-issue/{{sampleJiraId}}"
-method: GET
-settings: {}
-order: 2000

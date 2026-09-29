@@ -1,8 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/data/v2/retreats/get-full-retreat-by-document-id"
-method: POST
-body:
-  type: json
-  content: RTPAU2021001
-settings: {}
-order: 3000

@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://localhost:8083/workflow-service/process-api/runtime/process-instances/{{candidate_process_id}}/diagram
-method: GET
-settings: {}
-order: 2000

@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://fmis-user-management-fmis-dev.os1.senate.gov/api/public/fmis/um/v2/systems/users/8862d9f0d533e03a3669d0d8533b1a37
-method: POST
-settings: {}
-order: 6000

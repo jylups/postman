@@ -1,7 +1,0 @@
-$kind: http-request
-url: http://localhost:8082/services/conseqtasecurityclient/api/test
-method: GET
-auth:
-  type: noauth
-settings: {}
-order: 4000

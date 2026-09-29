@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/etl/data/traveltext/import-mongo-voucheritnerary/all"
-method: GET
-settings: {}
-order: 2000

@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://fmis.senate.gov/modern/api/fmis/document/data/v2/workflow/gateway/info/VSEC22100126
-method: GET
-settings: {}
-order: 16000

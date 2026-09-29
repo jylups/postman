@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://iworks-case.jylups.com/workflow-service/process-api/repository/deployments/a5460473-6727-11f0-8a57-f218d4508db9/resources/requestSupplementalInformation.requestSupplementalInformation.png
-method: GET
-settings: {}
-order: 3000

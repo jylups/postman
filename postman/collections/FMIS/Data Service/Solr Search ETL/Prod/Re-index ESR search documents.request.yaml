@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://fmis.senate.gov/modern/api/fmis/etl/data/reindex-all-esr
-method: GET
-settings: {}
-order: 1000

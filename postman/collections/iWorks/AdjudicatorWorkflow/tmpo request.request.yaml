@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://server.jylups.com:8083/workflow-service/process-api/runtime/tasks/b46e40aa-55f8-11f0-8616-5ad8f0cde987/comments
-method: GET
-settings: {}
-order: 12000

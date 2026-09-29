@@ -1,8 +1,0 @@
-$kind: http-request
-url: https://uat.fmis.senate.gov/modern/api/fmis/etl/data/ros/export-to-mongo/doc-header
-method: POST
-body:
-  type: json
-  content: '["DTUB20210317"]'
-settings: {}
-order: 4000

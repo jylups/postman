@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{administration-service}}/api/users/profile/check"
-method: GET
-settings: {}
-order: 1000

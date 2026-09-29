@@ -1,9 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/data/v2/funding/org/{{orgCode}}"
-method: GET
-auth:
-  type: bearer
-  credentials:
-    token: "{{token1}}"
-settings: {}
-order: 19000

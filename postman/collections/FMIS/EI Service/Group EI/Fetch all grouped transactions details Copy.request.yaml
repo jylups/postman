@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{eiServicesURL}}/api/ei/fetchAllGroupsbyOfficeCode/KLO/travel"
-method: GET
-settings: {}
-order: 7000

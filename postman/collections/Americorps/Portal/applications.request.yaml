@@ -1,5 +1,0 @@
-$kind: http-request
-url: http://localhost:5154/api/application/getapplications/cd11eb3d-79f3-421d-9b2d-fc90b51b255d
-method: GET
-settings: {}
-order: 3000

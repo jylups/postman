@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{notificationService}}/api/notification/resend/failed/{{emailDocToResend}}"
-method: POST
-settings: {}
-order: 2000

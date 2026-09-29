@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/data/v2/retreats/posting-status-from-voucher/DROU20210101"
-method: GET
-settings: {}
-order: 6000

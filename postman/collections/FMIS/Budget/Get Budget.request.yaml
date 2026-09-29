@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{budgetService}}/api/budget/get/budget/5f91eca355aa83000174a502/2021/TOO"
-method: GET
-settings: {}
-order: 2000

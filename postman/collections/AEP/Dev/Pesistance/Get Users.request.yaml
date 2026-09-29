@@ -1,7 +1,0 @@
-$kind: http-request
-url: http://localhost:8080/api/user
-method: GET
-body:
-  type: formdata
-  content: []
-order: 2000

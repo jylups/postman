@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{dataServiceUAT}}/api/fmis/etl/data/traveltext/export-to-mongo/doc-header"
-method: GET
-settings: {}
-order: 1000

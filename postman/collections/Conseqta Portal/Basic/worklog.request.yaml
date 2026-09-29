@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://conseqta-worklog-service.conseqta.io/worklog/api/idp/user/jcarvallo
-method: GET
-settings: {}
-order: 2000

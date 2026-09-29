@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://fmis-web-fmis-demo.apps.vcs1.senate.gov/api/web/commitId
-method: GET
-settings: {}
-order: 1000

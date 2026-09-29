@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/document/data/v2/initiate/direct-voucher/esr/{{esrNbr}}"
-method: GET
-settings: {}
-order: 5000

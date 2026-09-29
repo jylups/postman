@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://uat.fmis.senate.gov/posting/api/fmis/gl/do/postings
-method: GET
-settings: {}
-order: 5000

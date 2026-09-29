@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{keycloakServer}}/auth/admin/realms/ConseqtaInternal/users"
-method: GET
-settings: {}
-order: 5000

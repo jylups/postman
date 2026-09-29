@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://fmis.senate.gov/modern/api/fmis/etl/data/ros/export-to-mongo/budget-line-item
-method: GET
-settings: {}
-order: 3000

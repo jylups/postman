@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{server_base}}/cmmn-api/cmmn-runtime/case-instances/{{case_instance_id}}/diagram"
-method: GET
-settings: {}
-order: 4000

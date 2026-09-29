@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://fmis-peoplesoft-integration-service-fmis-demo.os1.senate.gov/api/peoplesoft/budget/sync/data
-method: GET
-settings: {}
-order: 1000

@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/document/data/v2/workflow/document/info/V22000003175"
-method: GET
-settings: {}
-order: 11000

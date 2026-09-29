@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{worklogServiceDev}}/worklog/api/etl/jira/issues/project/FDB"
-method: GET
-settings: {}
-order: 1000

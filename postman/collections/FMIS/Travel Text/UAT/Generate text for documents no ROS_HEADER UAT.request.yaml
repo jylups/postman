@@ -1,8 +1,0 @@
-$kind: http-request
-url: "{{dataServiceUAT}}/api/fmis/etl/data/traveltext/import-from-fmis/"
-method: POST
-body:
-  type: json
-  content: '["DKLO20220099"]'
-settings: {}
-order: 10000

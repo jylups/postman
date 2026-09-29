@@ -1,7 +1,0 @@
-$kind: http-request
-url: http://raspberrypi.local:8081/harmony/config
-method: GET
-body:
-  type: formdata
-  content: []
-order: 4000

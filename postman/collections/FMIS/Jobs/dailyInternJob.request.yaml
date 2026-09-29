@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{etlJobServiceURL}}/api/etl/jobs/run/dailyInternJob"
-method: GET
-settings: {}
-order: 5000

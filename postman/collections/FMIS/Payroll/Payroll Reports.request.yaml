@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://fmis.senate.gov/document/api/document/payroll/process/files
-method: GET
-settings: {}
-order: 2000

@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{uaasClientURL}}/oidc-client-library/api/user/oauthInfo"
-method: GET
-settings: {}
-order: 9000

@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://fmis.senate.gov/modern/api/fmis/document/data/v2/get-ta-nbr-from-esr-nbr/ESR202033604
-method: GET
-settings: {}
-order: 1000

@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/document/data/v2/check/budget/VSAA22100233"
-method: GET
-settings: {}
-order: 2000

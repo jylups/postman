@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://conseqta-esf-inbox-rest.conseqta.io/esf-inbox/api/list
-method: GET
-settings: {}
-order: 2000

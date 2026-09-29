@@ -1,9 +1,0 @@
-$kind: http-request
-url: "{{workflowServiceURI}}/api/workflow/claimed/tasks "
-method: GET
-auth:
-  type: bearer
-  credentials:
-    token: "{{token1}}"
-settings: {}
-order: 2000

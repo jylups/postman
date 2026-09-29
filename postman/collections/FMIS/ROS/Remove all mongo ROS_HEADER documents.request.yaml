@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{dataServiceURL}}/api/fmis/etl/data/ros/export-to-mongo/delete"
-method: DELETE
-settings: {}
-order: 26000

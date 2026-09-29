@@ -1,8 +1,0 @@
-$kind: http-request
-url: https://fmis.senate.gov/modern/api/fmis/etl/data/traveltext/update-text
-method: POST
-body:
-  type: json
-  content: '["DTIL20210624"]'
-settings: {}
-order: 7000

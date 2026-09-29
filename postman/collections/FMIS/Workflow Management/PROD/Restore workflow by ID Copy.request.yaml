@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://fmis.senate.gov/workflow/api/workflow/restore/{{workflowIdToRestore}}
-method: GET
-settings: {}
-order: 5000

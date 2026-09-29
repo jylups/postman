@@ -1,5 +1,0 @@
-$kind: http-request
-url: https://uat.fmis.senate.gov/modern/api/fmis/etl/data/retreat/search/etlall
-method: GET
-settings: {}
-order: 5000

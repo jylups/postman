@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{eiServicesURL}}/api/ei/remaining-balance/SCH/purchase"
-method: GET
-settings: {}
-order: 6000

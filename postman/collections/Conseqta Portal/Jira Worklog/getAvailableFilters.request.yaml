@@ -1,5 +1,0 @@
-$kind: http-request
-url: "{{worklogService}}/worklog/api/admin/available-filters"
-method: GET
-settings: {}
-order: 5000

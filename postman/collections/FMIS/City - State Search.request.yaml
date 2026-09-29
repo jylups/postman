@@ -1,9 +1,0 @@
-$kind: http-request
-url: "{{serverURI}}/modern/api/fmis/data/v2/search/city-state/FLORIDA$20,NY"
-method: GET
-auth:
-  type: bearer
-  credentials:
-    token: "{{token1}}"
-settings: {}
-order: 41000
