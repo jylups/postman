@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{server_base}}/cmmn-api/cmmn-runtime/case-instances/{{case_instance_id}}/variables/{{variableName}}"
+method: PUT
+body:
+  type: json
+  content: |2-
+        {
+            "name": "lastName",
+            "scope": null,
+            "type": "string",
+            "value": "Raj"
+        }
+settings: {}
+order: 12583
